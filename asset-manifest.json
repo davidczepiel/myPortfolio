@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/davidczepiel.github.io/static/css/main.5ccdd2a6.css",
+    "main.js": "/davidczepiel.github.io/static/js/main.3e8f8168.js",
+    "static/media/ApruebameEstaPreview.png": "/davidczepiel.github.io/static/media/ApruebameEstaPreview.8b3760e5682328a9ff49.png",
+    "static/media/Wolfestein3DPreview.png": "/davidczepiel.github.io/static/media/Wolfestein3DPreview.9a725875f7506eb81bdf.png",
+    "static/media/avatar.png": "/davidczepiel.github.io/static/media/avatar.8c67ce286cd10b8fcf27.png",
+    "static/media/4AnotherDayPreview.png": "/davidczepiel.github.io/static/media/4AnotherDayPreview.011cfca889cf9feb3f18.png",
+    "static/media/OhnOPreview.png": "/davidczepiel.github.io/static/media/OhnOPreview.45e3f47bad94bd01a848.png",
+    "static/media/AnimalCookingPreview.png": "/davidczepiel.github.io/static/media/AnimalCookingPreview.679befcdf844571fc11f.png",
+    "static/media/LumenFallPreview.png": "/davidczepiel.github.io/static/media/LumenFallPreview.38a3471cfda02af3585b.png",
+    "static/media/TheCatThatWatchedTheStarsPreview.png": "/davidczepiel.github.io/static/media/TheCatThatWatchedTheStarsPreview.8c08b699d3996e26421e.png",
+    "static/media/FlowFreePreview.png": "/davidczepiel.github.io/static/media/FlowFreePreview.b7a545ad74c7298da398.png",
+    "index.html": "/davidczepiel.github.io/index.html",
+    "main.5ccdd2a6.css.map": "/davidczepiel.github.io/static/css/main.5ccdd2a6.css.map",
+    "main.3e8f8168.js.map": "/davidczepiel.github.io/static/js/main.3e8f8168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ccdd2a6.css",
+    "static/js/main.3e8f8168.js"
+  ]
+}
