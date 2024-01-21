@@ -11,17 +11,17 @@ import "aos/dist/aos.css";
 const features = [
   {
     name: "Age:",
-    description: "18 years old",
+    description: "23 years old",
     icon: CalendarIcon,
   },
   {
     name: "Email:",
-    description: "name@example.com",
+    description: "czepieldavid@gmail.com",
     icon: AtSymbolIcon,
   },
   {
     name: "Location:",
-    description: "India, Earth",
+    description: "Madrid, Spain",
     icon: MapPinIcon,
   },
 ];
@@ -44,24 +44,8 @@ export default function About() {
                 About Me
               </p>
               <p className="mt-6 text-lg leading-8" data-aos="fade-right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                suscipit lobortis nisi, consequat semper lacus tempor sit amet.
-                Sed elit orci, pretium sed velit sit amet, venenatis pretium
-                magna. Nam pharetra dictum urna, non vestibulum mauris vulputate
-                ut. Sed eros nisi, dapibus vitae consequat non, mollis et
-                tortor. Maecenas bibendum nunc eu cursus maximus. Fusce
-                ultricies ornare neque, vel varius libero euismod eget. Nulla
-                sodales blandit lacus, id maximus quam interdum in. Morbi eu
-                velit ut mi semper sollicitudin finibus aliquam nisi.
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Ut accumsan faucibus urna vel
-                placerat. Donec euismod dui enim, tincidunt suscipit mauris
-                lacinia vel. Fusce eget risus eget leo euismod porta. Aliquam
-                dapibus sapien vitae eros pulvinar, in auctor ligula porta. Nam
-                ac porttitor risus, nec blandit nulla. Nam erat erat, venenatis
-                quis scelerisque nec, rhoncus id mi. Suspendisse molestie nibh
-                purus, quis semper tellus pulvinar eget.
-              </p>
+              I'm a software developer specialized in the field of video games. With a degree in video game development under my belt, I've been able to work on multiple projects for platforms such as PC, Android, and even had the opportunity to experience what console development is like by making use of PS4 development kits. Although I have experience with tools like Unity or Godot, I feel the most comfortable working in C++.
+             </p>
             </div>
           </div>
         </div>
@@ -76,7 +60,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+      {/* <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
           <div className="text-base leading-7">
             <div className="grid gap-x-6 sm:grid-cols-2">
@@ -139,7 +123,7 @@ export default function About() {
             </dl>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

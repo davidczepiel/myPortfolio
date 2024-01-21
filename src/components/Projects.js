@@ -1,44 +1,79 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LumenFallPreview from "../Resources/Projects/LumenFall/LumenFallPreview.png";
+import AnimalCookingPreview from "../Resources/Projects/AnimalCooking/AnimalCookingPreview.png";
+import UnitarioEnginePreview from "../Resources/Projects/UnitarioEngine/4AnotherDayPreview.png";
+import OhnOPreview from "../Resources/Projects/OhnO/OhnOPreview.png";
+import ApruebameEstaPreview from "../Resources/Projects/ApruebameEsta/ApruebameEstaPreview.png";
+import TheCatThatWatchedTheStarsPreview from "../Resources/Projects/TheCatThatWatchedTheStars/TheCatThatWatchedTheStarsPreview.png";
+import FlowFreePreview from "../Resources/Projects/FlowFree/FlowFreePreview.png";
+import Wolfestein3DPreview from "../Resources/Projects/Wolfestein3D/Wolfestein3DPreview.png";
 
 const projects = [
   {
     id: 1,
-    name: "Sprinkles",
+    name: "LumenFall",
     href: "#",
-    imageSrc:
-      "https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE",
-    used: "ReactJS, TailwindCSS",
-    description: "A restaurant website.",
+    imageSrc: LumenFallPreview,
+    used: "C#, Unity",
+    description: "A more challenging puzzle game",
   },
   {
     id: 2,
-    name: "Paper Bag",
+    name: "Animal Cooking",
     href: "#",
-    imageSrc:
-      "https://fastly.picsum.photos/id/3/5000/3333.jpg?hmac=GDjZ2uNWE3V59PkdDaOzTOuV3tPWWxJSf4fNcxu4S2g",
-    used: "ReactJS, TailwindCSS",
-    description: "An online shopping website.",
+    imageSrc: AnimalCookingPreview,
+    used: "C++, SDL2",
+    description: "Team up with a friend in this hectic culinary competition",
   },
   {
     id: 3,
-    name: "My Blogs",
+    name: "Unitario Engine",
     href: "#",
-    imageSrc:
-      "https://fastly.picsum.photos/id/447/1280/853.jpg?hmac=4DUUCOsHRIoYbNrPRYEUHOW7wCjM7TROrTrYFivtdPw",
-
-    used: "ReactJS, TailwindCSS",
-    description: "A personal blogging website.",
+    imageSrc: UnitarioEnginePreview,
+    used: "C++, LUA, Physx, Ogre3D, FMOD",
+    description: "Custom C++ game engine made from scratch",
   },
   {
     id: 4,
-    name: "Canopy",
+    name: "OhnO! clone",
     href: "#",
-    imageSrc:
-      "https://fastly.picsum.photos/id/366/4000/3000.jpg?hmac=zphhHOH9ofToN2jNHd8z-nc98NrBd8y2okWXEXetLDg",
-    used: "ReactJS, TailwindCSS",
-    description: "An online educational website.",
+    imageSrc: OhnOPreview,
+    used: "Java, AndroidStudio",
+    description: "A clone of the popular game OhnO!",
+  },
+  {
+    id: 5,
+    name: "Apruébame Esta",
+    href: "#",
+    imageSrc: ApruebameEstaPreview,
+    used: "GDScript, Godot",
+    description: "A game made for the GiftJam 2023",
+  },
+  {
+    id: 6,
+    name: "The cat that watched the stars",
+    href: "#",
+    imageSrc: TheCatThatWatchedTheStarsPreview,
+    used: "GDScript, Godot",
+    description: "A game made for the Mermelada Jam",
+  },
+  {
+    id: 7,
+    name: "Flow Free clone",
+    href: "#",
+    imageSrc: FlowFreePreview,
+    used: "C#, Unity",
+    description: "A clone of the popular game FlowFree",
+  },
+  {
+    id: 8,
+    name: "Wolfestein3D on PS4",
+    href: "#",
+    imageSrc: Wolfestein3DPreview,
+    used: "C++, PS4 Development Kit",
+    description: "A walker of the original Wolfestein3D for the PS4",
   },
 ];
 
@@ -82,9 +117,9 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <button className="btn btn-outline">View More</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

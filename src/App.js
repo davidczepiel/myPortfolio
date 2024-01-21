@@ -9,7 +9,7 @@ export default function App() {
     <div className="overflow-x-hidden">
       <Hero />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Projects />
       <Contact />
       <Footer />
