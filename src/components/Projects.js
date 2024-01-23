@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import React, { useState } from 'react';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LumenFallPreview from "../Resources/Projects/LumenFall/LumenFallPreview.png";
@@ -9,6 +11,8 @@ import ApruebameEstaPreview from "../Resources/Projects/ApruebameEsta/ApruebameE
 import TheCatThatWatchedTheStarsPreview from "../Resources/Projects/TheCatThatWatchedTheStars/TheCatThatWatchedTheStarsPreview.png";
 import FlowFreePreview from "../Resources/Projects/FlowFree/FlowFreePreview.png";
 import Wolfestein3DPreview from "../Resources/Projects/Wolfestein3D/Wolfestein3DPreview.png";
+
+import Modal from "./Modal";
 
 const projects = [
   {
@@ -78,11 +82,26 @@ const projects = [
 ];
 
 export default function Projects() {
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
+  const [modalIsOpen, setModalIsOpen] = useState(true);
+
   return (
     <div id="projects">
+      <Modal isOpen={modalIsOpen} onClose={setModalIsOpen} project={
+  {title: 'LUMENFALL ',
+  description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.'
++
+  'Habitasse sodales sed aliquet rhoncus blandit volutpat mus urna molestie litora a habitant, vehicula senectus aenean viverra pellentesque dis tristique est feugiat aliquam. Venenatis quis nibh quisque ultricies eu erat condimentum, viverra pharetra orci sollicitudin potenti odio. Aenean mus diam sem ad interdum sapien ante consequat, ac proin vitae lacus quis tellus dignissim, sagittis velit dui donec euismod ornare praesent.',
+  trailerUrl: 'https://www.youtube.com/embed/LMda9kzKTJc',
+  tags: ['C#', 'Unity'],
+  githubUrl: 'https://github.com/yourusername/project1',
+      }
+      }>
+      </Modal>
       <div className="mx-auto max-w-2xl px-6 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
         <h2 className="text-lg leading-7">Browse my recent</h2>
         <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">

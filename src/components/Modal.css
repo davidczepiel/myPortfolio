@@ -1,0 +1,4 @@
+/* Modal.css */
+body {
+    overflow: auto; /* Default value to allow scrolling */
+  }
