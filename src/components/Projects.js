@@ -87,11 +87,32 @@ export default function Projects() {
     AOS.init({ duration: 2000 });
   }, []);
 
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    // Check if a specific project is selected (for example, project with id 1)
+    if (selectedProject !== null) {
+      setModalIsOpen(true);
+    }
+    console.log("ADIOS");
+  }, [selectedProject]);
+
+  // Function to open the modal for a specific project
+  const openModal = (projectId) => {
+    setSelectedProject(projectId);
+    console.log("HOlA");
+  };
+
+  // Function to open the modal for a specific project
+  const closeModal = () => {
+    setSelectedProject(null);
+    setModalIsOpen(false);
+  };
 
   return (
     <div id="projects">
-      <Modal isOpen={modalIsOpen} onClose={setModalIsOpen} project={
+      <Modal isOpen={modalIsOpen} onClose={()=>closeModal()} project={
   {title: 'LUMENFALL ',
   description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.'
 +
@@ -112,8 +133,10 @@ export default function Projects() {
             <div
               key={project.id}
               className="group relative ring-2 ring-base-300 bg-base-200 rounded-2xl shadow-xl"
+              onClick={() => openModal(project.id)}
+              
               data-aos="flip-left"
-            >
+              >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:brightness-75 duration-300 delay-100 lg:h-80 rounded-t-2xl ">
                 <img
                   src={project.imageSrc}
@@ -121,10 +144,12 @@ export default function Projects() {
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </div>
-              <div className="mt-4 flex justify-between p-4">
+              <div className="mt-4 flex justify-between p-4"
+              >
                 <div className="p-4">
                   <h3 className="text-lg font-bold">
-                    <a href={project.href}>
+                    {/* <a href={project.href}> */}
+                    <a>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {project.name}
                     </a>

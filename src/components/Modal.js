@@ -1,13 +1,10 @@
 // Modal.js
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import './Modal.css'; // Import the CSS file for styling
+import AOS from "aos";
 
 const Modal = ({ isOpen, onClose, project }) => {
-  const [isModalOpen, setIsModalOpen] = useState(isOpen);
-
   const closeModal = () => {
-    setIsModalOpen(false);
     onClose();
   };
 
@@ -18,33 +15,34 @@ const Modal = ({ isOpen, onClose, project }) => {
   };
 
   useEffect(() => {
-    if (isModalOpen) {
+    AOS.init({ duration: 500 });
+    if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-  }, [isModalOpen]);
+  }, [isOpen]);
 
-  return isModalOpen
+  return isOpen
     ? ReactDOM.createPortal(
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
-          onClick={handleBackgroundClick}
+          className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto"
         >
-          <div className="fixed inset-0 bg-black opacity-50"></div>
-          <div className="relative w-full max-w-screen-md mx-4 my-6 md:max-w-screen-md lg:max-w-screen-lg">
-            {/* Content */}
-            <div className="relative bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
-              <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                <h3 className="text-3xl font-semibold text-center w-full">{project.title}</h3>
+          <div className="fixed inset-0 bg-black opacity-50" onClick={handleBackgroundClick}></div>
+          <div className="relative w-full max-w-screen-md mx-4 my-6 md:max-w-screen-md lg:max-w-screen-lg"
+              data-aos="fade-up"
+              data-aos-duration="500"
+          >
+            <div className="relative ring-2 ring-base-300 bg-base-200 rounded-2xl ">
+              <div className="flex items-start justify-between p-5 border-b border-solid  rounded-t">
+                <h3 className="text-center w-full mt-2 text-4xl font-bold tracking-tight sm:text-5xl ">{project.title}</h3>
                 <button
-                  className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                  className="p-1 ml-auto bg-transparent border-0  float-right text-4xl leading-none font-semibold outline-none focus:outline-none"
                   onClick={closeModal}
                 >
-                  <span className="text-black">&times;</span>
+                  <span>&times;</span>
                 </button>
               </div>
-              {/* Body with Project Details */}
               <div className="relative p-6 flex-auto">
                 <div className="mb-4">
                   <iframe
@@ -56,7 +54,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                     allowFullScreen
                   ></iframe>
                 </div>
-                <p className="text-gray-700 mb-4">{project.description}</p>
+                <p className="mt-1 mb-5 text-sm">{project.description}</p>
                 <div className="mb-4 flex justify-center">
                   {project.tags.map((tag, index) => (
                     <div
@@ -72,14 +70,12 @@ const Modal = ({ isOpen, onClose, project }) => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-emerald-500 font-bold px-6 py-2 text-sm rounded"
+                    className="text-white bg-blue-500 font-bold px-6 py-2 text-sm rounded"
                   >
                     View on GitHub
                   </a>
-                  {/* Add more buttons as needed */}
                 </div>
               </div>
-              {/* Footer */}
             </div>
           </div>
         </div>,
