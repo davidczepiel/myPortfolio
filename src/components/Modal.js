@@ -29,12 +29,12 @@ const Modal = ({ isOpen, onClose, project }) => {
           className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto"
         >
           <div className="fixed inset-0 bg-black opacity-50" onClick={handleBackgroundClick}></div>
-          <div className="relative w-full max-w-screen-md mx-4 my-6 md:max-w-screen-md lg:max-w-screen-lg"
+          <div className="relative w-full h-3/4 max-w-screen-md mx-4 my-6 md:max-w-screen-md lg:max-w-screen-lg"
               data-aos="fade-up"
               data-aos-duration="500"
           >
             <div className="relative ring-2 ring-base-300 bg-base-200 rounded-2xl ">
-              <div className="flex items-start justify-between p-5 border-b border-solid  rounded-t">
+              <div className="flex items-start justify-between p-5 rounded-t">
                 <h3 className="text-center w-full mt-2 text-4xl font-bold tracking-tight sm:text-5xl ">{project.title}</h3>
                 <button
                   className="p-1 ml-auto bg-transparent border-0  float-right text-4xl leading-none font-semibold outline-none focus:outline-none"
@@ -43,6 +43,9 @@ const Modal = ({ isOpen, onClose, project }) => {
                   <span>&times;</span>
                 </button>
               </div>
+
+              <div className="flex items-start justify-between mx-5 border-y border-solid  rounded-t"></div>
+
               <div className="relative p-6 flex-auto">
                 <div className="mb-4">
                   <iframe
@@ -55,24 +58,25 @@ const Modal = ({ isOpen, onClose, project }) => {
                   ></iframe>
                 </div>
                 <p className="mt-1 mb-5 text-sm">{project.description}</p>
-                <div className="mb-4 flex justify-center">
+                {/* <div className="mb-4 flex justify-center">
                   {project.tags.map((tag, index) => (
                     <div
-                      key={index}
-                      className="bg-blue-500 text-white px-3 py-1 rounded-md mr-2"
+                    key={index}
+                    className="bg-blue-500 text-white px-3 py-1 rounded-md mr-2"
                     >
-                      {tag}
+                    {tag}
                     </div>
-                  ))}
-                </div>
-                <div className="flex justify-center">
+                    ))}
+                  </div> */}
+                <div className="flex items-start justify-between border-y border-solid  rounded-t"></div>
+                <div className="flex justify-center items-center pt-6">
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-blue-500 font-bold px-6 py-2 text-sm rounded"
+                    className="btn btn-outline mx-5"
                   >
-                    View on GitHub
+                    GitHub
                   </a>
                 </div>
               </div>
