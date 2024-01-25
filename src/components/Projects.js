@@ -145,8 +145,8 @@ export default function Projects() {
                 />
               </div>
 
-              <div className="mt-4 flex justify-between p-4">
-                <div className="p-4">
+              <div className="flex justify-between mt-4 px-4 ">
+                <div className="px-4 h-24" >
                   <h3 className="text-lg font-bold">
                     {/* <a href={project.href}> */}
                     <a>
@@ -157,12 +157,13 @@ export default function Projects() {
                   <p className="mt-1 mb-5 text-sm">{project.description}</p>
                 </div>
               </div>
-
-                  {/* <div className="flex justify-center">
-                    <button onClick={() => openModal(project.id)} className="btn btn-outline">
-                      View Details
+                  <div className="flex justify-center pb-4 pt-2">
+                    <button onClick={() => openModal(project.id)} 
+                    className="z-10 btn btn-outline">
+                      View More
                     </button>
-                  </div> */}
+                  </div>
+
             </div>
           ))}
         </div>
