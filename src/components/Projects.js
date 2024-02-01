@@ -101,7 +101,8 @@ export default function Projects() {
   // Function to open the modal for a specific project
   const openModal = (projectId) => {
     setSelectedProject(projectId);
-    console.log("HOlA");
+    const localTheme = localStorage.getItem("theme");
+    console.log(localTheme);
   };
 
   // Function to open the modal for a specific project
@@ -115,8 +116,8 @@ export default function Projects() {
       <Modal isOpen={modalIsOpen} onClose={()=>closeModal()} project={
   {title: 'LUMENFALL ',
   description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.'
-+
-  'Habitasse sodales sed aliquet rhoncus blandit volutpat mus urna molestie litora a habitant, vehicula senectus aenean viverra pellentesque dis tristique est feugiat aliquam. Venenatis quis nibh quisque ultricies eu erat condimentum, viverra pharetra orci sollicitudin potenti odio. Aenean mus diam sem ad interdum sapien ante consequat, ac proin vitae lacus quis tellus dignissim, sagittis velit dui donec euismod ornare praesent.',
+                +
+                'Habitasse sodales sed aliquet rhoncus blandit volutpat mus urna molestie litora a habitant, vehicula senectus aenean viverra pellentesque dis tristique est feugiat aliquam. Venenatis quis nibh quisque ultricies eu erat condimentum, viverra pharetra orci sollicitudin potenti odio. Aenean mus diam sem ad interdum sapien ante consequat, ac proin vitae lacus quis tellus dignissim, sagittis velit dui donec euismod ornare praesent.',
   trailerUrl: 'https://www.youtube.com/embed/LMda9kzKTJc',
   tags: ['C#', 'Unity'],
   githubUrl: 'https://github.com/yourusername/project1',

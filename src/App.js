@@ -8,9 +8,9 @@ export default function App() {
   return (
     <div className="overflow-x-hidden">
       <Hero />
+      <Projects />
       <About />
       {/* <Skills /> */}
-      <Projects />
       <Contact />
       <Footer />
     </div>

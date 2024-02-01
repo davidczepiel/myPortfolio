@@ -26,6 +26,7 @@ export default function Hero() {
   useEffect(() => {
     localStorage.setItem("theme", theme);
     const localTheme = localStorage.getItem("theme");
+    console.log(localTheme);
     document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function Hero() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <p className="-m-1.5 p-1.5 font-semibold">Portfolio</p>
+            <p className="-m-1.5 p-1.5 font-semibold">David Czepiel Babiarz</p>
           </div>
           <div className="flex lg:hidden">
             <button

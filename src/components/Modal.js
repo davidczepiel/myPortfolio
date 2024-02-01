@@ -23,6 +23,13 @@ const Modal = ({ isOpen, onClose, project }) => {
     }
   }, [isOpen]);
 
+  const getBadgeTheme = () => {
+    if(localStorage.getItem("theme") === 'dark')
+      return 'text-xl md:text-2xl w-32 md:w-44 font-bold me-2 px-2.5 py-0.5 mb-1.5 rounded-full bg-gray-400 text-gray-800';
+    else 
+      return 'text-xl md:text-2xl w-32 md:w-44 font-bold me-2 px-2.5 py-0.5 mb-1.5 rounded-full bg-gray-800 text-white';
+  };
+
   return isOpen
     ? ReactDOM.createPortal(
         <div
@@ -47,17 +54,62 @@ const Modal = ({ isOpen, onClose, project }) => {
               <div className="flex items-start justify-between mx-5 border-y border-solid  rounded-t"></div>
 
               <div className="relative p-6 flex-auto">
-                <div className="mb-4">
+                <div className="mb-4 ">
+                  {/* Upper middle */}
+                  <div className="mb-4 md:flex md:items-center">
                   <iframe
                     title={project.title}
-                    width="100%"
-                    height="315"
+                    class="h-72 w-full md:w-1/2"
                     src={project.trailerUrl}
                     frameBorder="0"
                     allowFullScreen
                   ></iframe>
+
+                  <div class=" flex-grow grid grid-cols-2 gap-4 h-64 h-72">
+                      {/* GENRE */}
+                      <div className="flex pt-10  justify-center">
+                        <div className="text-center">
+                          <div className={getBadgeTheme()}>
+                            GENRE
+                          </div>
+                          <p className="mb-2 font-bold">BLOCK-PUZZLER</p>
+                        </div>
+                      </div>
+
+                      {/* PLATFORMS */}
+                      <div className="flex pt-10 justify-center ">
+                        <div className="text-center">
+                          <div className={getBadgeTheme()}>
+                            PLATFORMS
+                          </div>
+                          <p className="mb-2 font-bold">ANDROID PC</p>
+                        </div>
+                      </div>
+
+                      {/* TOOLS */}
+                      <div className="flex pt-10  justify-center">
+                        <div className="text-center">
+                          <div className={getBadgeTheme()}>
+                            TOOLS
+                          </div>
+                          <p className="mb-2 font-bold text-lg">C# UNITY</p>
+                        </div>
+                      </div>
+
+                      {/* DEVELOPED */}
+                      <div className="flex pt-10  justify-center">
+                        <div className="text-center">
+                          <div className={getBadgeTheme()}>
+                          DEVELOPED
+                          </div>
+                          <p className="mb-2 font-bold">2023</p>
+                        </div>
+                      </div>
+                  </div>
+
+                  </div>
+                  {project.description}
                 </div>
-                <p className="mt-1 mb-5 text-sm">{project.description}</p>
                 {/* <div className="mb-4 flex justify-center">
                   {project.tags.map((tag, index) => (
                     <div
