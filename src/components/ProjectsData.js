@@ -5,7 +5,9 @@ import LumenFallModalPreview1 from "../Resources/Projects/LumenFall/LumenFallMod
 import UnitarioEnginePreview from "../Resources/Projects/UnitarioEngine/4AnotherDayPreview.png";
 import OhnOPreview from "../Resources/Projects/OhnO/OhnOPreview.png";
 import FlowFreePreview from "../Resources/Projects/FlowFree/FlowFreePreview.png";
+
 import Wolfestein3DPreview from "../Resources/Projects/Wolfestein3D/Wolfestein3DPreview.png";
+import Wolfestein3DModalPreview0 from "../Resources/Projects/Wolfestein3D/WolfesteinModalPreview0.png";
 
 import AnimalCookingPreview from "../Resources/Projects/AnimalCooking/AnimalCookingPreview.png";
 import AnimalCookingModalPreview0 from "../Resources/Projects/AnimalCooking/AnimalCookingModalPreview0.png";
@@ -244,7 +246,7 @@ export const ProjectsData = [
             title:'Wolfestein3D on PS4',
             badges:["Block Puzzler", "Android", "C# Unity", "2023"],
             ImagesToShow:[
-                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                Wolfestein3DModalPreview0,
                 "https://wallpapercave.com/wp/wp3386769.jpg",
                 "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
             ],
