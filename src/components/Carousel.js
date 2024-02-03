@@ -22,16 +22,11 @@ export default function Carousel({
 
   
   return (
-    <div className="relative h-72 w-full md:w-1/2 overflow-hidden rounded-lg bg-gray-400">
+    <div className="relative h-72 w-full md:w-1/2 overflow-hidden rounded-lg bg-base-300">
         <div
-        className={`flex transition ease-out duration-40 h-full`}
-        style={{
-            transform: `translateX(-${curr * 100}%)`,
-        }}
+        className={`flex h-full place-content-center`}
         >
-            {ProjectsData[projectIndex].ModalData.ImagesToShow.map((s) => {
-                return <img src={s} className="w-full h-full object-cover" />; 
-            })}
+            <img src={ProjectsData[projectIndex].ModalData.ImagesToShow[curr]} className=" object-cover group-hover:opacity-100" />; 
         </div>
         {/* Button left */}
         <div className="absolute inset-0 flex items-center justify-between p-4">
