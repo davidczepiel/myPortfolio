@@ -75,7 +75,7 @@ export default function Projects() {
               </div>
                   <div className="flex justify-center pb-4 pt-2">
                     <button onClick={() => openModal(project.id)} 
-                    className="z-10 btn btn-outline">
+                    className="z-10 btn btn-outline transition-transform transform-gpu hover:scale-105">
                       View More
                     </button>
                   </div>

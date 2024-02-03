@@ -22,7 +22,7 @@ export default function Carousel({
 
   
   return (
-    <div className="relative h-72 w-full md:w-1/2 overflow-hidden rounded-lg">
+    <div className="relative h-72 w-full md:w-1/2 overflow-hidden rounded-lg bg-gray-400">
         <div
         className={`flex transition ease-out duration-40 h-full`}
         style={{
@@ -30,7 +30,7 @@ export default function Carousel({
         }}
         >
             {ProjectsData[projectIndex].ModalData.ImagesToShow.map((s) => {
-                return <img src={s} className="w-full h-full object-cover" />;
+                return <img src={s} className="w-full h-full object-cover" />; 
             })}
         </div>
         {/* Button left */}

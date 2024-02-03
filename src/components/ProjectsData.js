@@ -21,9 +21,8 @@ export const ProjectsData = [
             indepthDescription:'Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.',
             badges:["Block Puzzler", "Android", "C# Unity", "2023"],
             ImagesToShow:[
-                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-                "https://wallpapercave.com/wp/wp3386769.jpg",
-                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+                LumenFallPreview,
+               "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
             ],
         }
     },
