@@ -45,11 +45,14 @@ export default function Projects() {
         <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
           Projects
         </p>
-        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+
+        {/* PROJECT CARDS */}
+        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 relative">
           {ProjectsData.map((project, index) => (
             <div
               key={project.id}
-              className="group relative ring-2 ring-base-300 bg-base-200 rounded-2xl shadow-xl"
+              className="group relative ring-2 ring-base-300 bg-base-200 rounded-2xl shadow-xl 
+              transition ease-in-out hover:scale-110 duration-300"
               onClick={() => openModal(index)}
               
               data-aos="flip-left"

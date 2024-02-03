@@ -13,9 +13,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const navigation = [
-  { name: "About Me", id: "about" },
-  { name: "Skills", id: "skills" },
   { name: "Projects", id: "projects" },
+  { name: "Skills", id: "skills" },
+  { name: "About Me", id: "about" },
   { name: "Contact Me", id: "contact" },
 ];
 

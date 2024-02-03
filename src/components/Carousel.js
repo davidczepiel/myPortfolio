@@ -26,7 +26,7 @@ export default function Carousel({
         <div
         className={`flex h-full place-content-center`}
         >
-            <img src={ProjectsData[projectIndex].ModalData.ImagesToShow[curr]} className=" object-cover group-hover:opacity-100" />; 
+            <img src={ProjectsData[projectIndex].ModalData.ImagesToShow[curr]} className=" object-cover group-hover:opacity-100" />
         </div>
         {/* Button left */}
         <div className="absolute inset-0 flex items-center justify-between p-4">

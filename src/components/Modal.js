@@ -103,7 +103,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                   </div>
                   </div>
                   <p>
-                    {ProjectsData[projectINDEX].ModalData.indepthDescription}
+                    {ProjectsData[projectINDEX].ModalData.ModalContent()}
                   </p>
                 </div>
                 <div className="flex items-start justify-between border-y border-solid  rounded-t"></div>
