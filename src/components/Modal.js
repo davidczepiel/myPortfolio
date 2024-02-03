@@ -2,10 +2,11 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import AOS from "aos";
-import Wolfestein3DPreview from "../Resources/Projects/Wolfestein3D/Wolfestein3DPreview.png";
 import Carousel from './Carousel';
+import { ProjectsData } from './ProjectsData';
 
-const Modal = ({ isOpen, onClose, project }) => {
+
+const Modal = ({ isOpen, onClose, projectINDEX }) => {
 
   const Slides = [
     "https://i.ibb.co/ncrXc2V/1.png",
@@ -50,7 +51,7 @@ const Modal = ({ isOpen, onClose, project }) => {
           >
             <div className="relative ring-2 ring-base-300 bg-base-200 rounded-2xl ">
               <div className="flex items-start justify-between p-5 rounded-t">
-                <h3 className="text-center w-full mt-2 text-4xl font-bold tracking-tight sm:text-5xl ">{project.title}</h3>
+                <h3 className="text-center w-full mt-2 text-4xl font-bold tracking-tight sm:text-5xl ">{ProjectsData[projectINDEX].ModalData.title}</h3>
                 <button
                   className="p-1 ml-auto bg-transparent border-0  float-right text-4xl leading-none font-semibold outline-none focus:outline-none"
                   onClick={closeModal}
@@ -68,9 +69,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                     <Carousel>
                       {[
                         ...Slides.map((s)=>
-                            <div className = 'bg-blue-300 h-auto w-auto m-1'>
-                              
-                            </div>
+                            <div className = 'h-auto w-auto m-1'/>
                           )
                       ]}
                     </Carousel>
@@ -83,7 +82,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <div className={getBadgeTheme()}>
                             GENRE
                           </div>
-                          <p className="mb-2 font-bold">BLOCK-PUZZLER</p>
+                          <p className="mb-2 font-bold">{ProjectsData[projectINDEX].ModalData.badges[0]}</p>
                         </div>
                       </div>
                       {/* PLATFORMS */}
@@ -92,7 +91,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <div className={getBadgeTheme()}>
                             PLATFORMS
                           </div>
-                          <p className="mb-2 font-bold">ANDROID PC</p>
+                          <p className="mb-2 font-bold">{ProjectsData[projectINDEX].ModalData.badges[1]}</p>
                         </div>
                       </div>
                       {/* TOOLS */}
@@ -101,7 +100,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <div className={getBadgeTheme()}>
                             TOOLS
                           </div>
-                          <p className="mb-2 font-bold text-lg">C# UNITY</p>
+                          <p className="mb-2 font-bold text-lg">{ProjectsData[projectINDEX].ModalData.badges[2]}</p>
                         </div>
                       </div>
                       {/* DEVELOPED */}
@@ -110,27 +109,19 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <div className={getBadgeTheme()}>
                           DEVELOPED
                           </div>
-                          <p className="mb-2 font-bold">2023</p>
+                          <p className="mb-2 font-bold">{ProjectsData[projectINDEX].ModalData.badges[3]}</p>
                         </div>
                       </div>
                   </div>
                   </div>
-                  {project.description}
+                  <p>
+                    {ProjectsData[projectINDEX].ModalData.indepthDescription}
+                  </p>
                 </div>
-                {/* <div className="mb-4 flex justify-center">
-                  {project.tags.map((tag, index) => (
-                    <div
-                    key={index}
-                    className="bg-blue-500 text-white px-3 py-1 rounded-md mr-2"
-                    >
-                    {tag}
-                    </div>
-                    ))}
-                  </div> */}
                 <div className="flex items-start justify-between border-y border-solid  rounded-t"></div>
                 <div className="flex justify-center items-center pt-6">
                   <a
-                    href={project.githubUrl}
+                    href={ProjectsData[projectINDEX].ModalData.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline mx-5"
