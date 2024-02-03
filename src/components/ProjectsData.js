@@ -17,10 +17,14 @@ export const ProjectsData = [
             used: "C#, Unity",
         },
         ModalData:{
-            //Modal data
             title:'LumenFall',
-            indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            indepthDescription:'Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.',
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////ANIMAL COOKING/////////////////
@@ -33,8 +37,14 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Animal Cooking',
-            indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            indepthDescription:'Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus.',
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://wallpaperaccess.com/full/809523.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////UNITARIO ENGINE/////////////////
@@ -49,7 +59,12 @@ export const ProjectsData = [
         ModalData:{
             title:'Unitario Engine',
             indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////OH NO CLONE/////////////////
@@ -63,7 +78,12 @@ export const ProjectsData = [
         ModalData:{
             title:'OhnO! clone',
             indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////APRUEBAME ESTA/////////////////
@@ -77,7 +97,12 @@ export const ProjectsData = [
         ModalData:{
             title:'Apruébame Esta',
             indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////THE CAT THAT WATCHED THE STARS/////////////////
@@ -91,7 +116,12 @@ export const ProjectsData = [
         ModalData:{
             title:'The cat that watched the stars',
             indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////FLOW FREE/////////////////
@@ -105,7 +135,12 @@ export const ProjectsData = [
         ModalData:{
             title:'Flow Free clone',
             indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
     ////////////////////WOLFESTEIN 3D/////////////////
@@ -119,7 +154,12 @@ export const ProjectsData = [
         ModalData:{
             title:'Wolfestein3D on PS4',
             indepthDescription:'HOLA',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"]
+            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+                "https://wallpapercave.com/wp/wp3386769.jpg",
+                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+            ],
         }
     },
   ];

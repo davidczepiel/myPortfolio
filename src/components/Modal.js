@@ -8,11 +8,6 @@ import { ProjectsData } from './ProjectsData';
 
 const Modal = ({ isOpen, onClose, projectINDEX }) => {
 
-  const Slides = [
-    "https://i.ibb.co/ncrXc2V/1.png",
-    "https://i.ibb.co/yg7BSdM/4.png"
-  ]
-
   const closeModal = () => {
     onClose();
   };
@@ -66,14 +61,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                   {/* Upper middle */}
                   <div className="mb-4 md:flex md:items-center">
                     {/* CAROUSEL */}
-                    <Carousel>
-                      {[
-                        ...Slides.map((s)=>
-                            <div className = 'h-auto w-auto m-1'/>
-                          )
-                      ]}
-                    </Carousel>
-
+                    <Carousel projectIndex={projectINDEX}/>
                   {/* BADGES */}
                   <div class=" flex-grow grid grid-cols-2 gap-4 h-64 h-72">
                       {/* GENRE */}

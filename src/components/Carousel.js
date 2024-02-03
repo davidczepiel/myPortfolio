@@ -1,25 +1,18 @@
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "react-feather"
-
-
-let exapmle = [
-    "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-    "https://wallpapercave.com/wp/wp3386769.jpg",
-    "https://wallpaperaccess.com/full/809523.jpg",
-    "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
-  ];
+import { ProjectsData } from "./ProjectsData"
 
 export default function Carousel({
-  children: slides,
   autoSlide = false,
   autoSlideInterval = 3000,
+  projectIndex
 }) {
   const [curr, setCurr] = useState(0)
 
   const prev = () =>
-    setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
+    setCurr((curr) => (curr === 0 ? ProjectsData[projectIndex].ModalData.ImagesToShow.length - 1 : curr - 1))
   const next = () =>
-    setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
+    setCurr((curr) => (curr === ProjectsData[projectIndex].ModalData.ImagesToShow.length - 1 ? 0 : curr + 1))
 
   useEffect(() => {
     if (!autoSlide) return
@@ -36,7 +29,7 @@ export default function Carousel({
             transform: `translateX(-${curr * 100}%)`,
         }}
         >
-            {exapmle.map((s) => {
+            {ProjectsData[projectIndex].ModalData.ImagesToShow.map((s) => {
                 return <img src={s} className="w-full h-full object-cover" />;
             })}
         </div>
@@ -59,7 +52,7 @@ export default function Carousel({
          {/* Lower indicators for which slide is currently being displayed */}
         <div className="absolute bottom-4 right-0 left-0">
             <div className="flex items-center justify-center gap-2">
-            {slides.map((_, i) => (
+            {ProjectsData[projectIndex].ModalData.ImagesToShow.map((_, i) => (
                 <div
                 className={`
                 transition-all w-3 h-3 bg-white rounded-full
