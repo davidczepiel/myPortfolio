@@ -1,9 +1,17 @@
 // Modal.js
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import AOS from "aos";
+import Wolfestein3DPreview from "../Resources/Projects/Wolfestein3D/Wolfestein3DPreview.png";
+import Carousel from './Carousel';
 
 const Modal = ({ isOpen, onClose, project }) => {
+
+  const Slides = [
+    "https://i.ibb.co/ncrXc2V/1.png",
+    "https://i.ibb.co/yg7BSdM/4.png"
+  ]
+
   const closeModal = () => {
     onClose();
   };
@@ -52,19 +60,22 @@ const Modal = ({ isOpen, onClose, project }) => {
               </div>
 
               <div className="flex items-start justify-between mx-5 border-y border-solid  rounded-t"></div>
-
               <div className="relative p-6 flex-auto">
                 <div className="mb-4 ">
                   {/* Upper middle */}
                   <div className="mb-4 md:flex md:items-center">
-                  <iframe
-                    title={project.title}
-                    class="h-72 w-full md:w-1/2"
-                    src={project.trailerUrl}
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
+                    {/* CAROUSEL */}
+                    <Carousel>
+                      {[
+                        ...Slides.map((s)=>
+                            <div className = 'bg-blue-300 h-auto w-auto m-1'>
+                              
+                            </div>
+                          )
+                      ]}
+                    </Carousel>
 
+                  {/* BADGES */}
                   <div class=" flex-grow grid grid-cols-2 gap-4 h-64 h-72">
                       {/* GENRE */}
                       <div className="flex pt-10  justify-center">
@@ -75,7 +86,6 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <p className="mb-2 font-bold">BLOCK-PUZZLER</p>
                         </div>
                       </div>
-
                       {/* PLATFORMS */}
                       <div className="flex pt-10 justify-center ">
                         <div className="text-center">
@@ -85,7 +95,6 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <p className="mb-2 font-bold">ANDROID PC</p>
                         </div>
                       </div>
-
                       {/* TOOLS */}
                       <div className="flex pt-10  justify-center">
                         <div className="text-center">
@@ -95,7 +104,6 @@ const Modal = ({ isOpen, onClose, project }) => {
                           <p className="mb-2 font-bold text-lg">C# UNITY</p>
                         </div>
                       </div>
-
                       {/* DEVELOPED */}
                       <div className="flex pt-10  justify-center">
                         <div className="text-center">
@@ -106,7 +114,6 @@ const Modal = ({ isOpen, onClose, project }) => {
                         </div>
                       </div>
                   </div>
-
                   </div>
                   {project.description}
                 </div>
