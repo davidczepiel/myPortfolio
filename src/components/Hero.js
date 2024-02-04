@@ -20,22 +20,25 @@ const navigation = [
 ];
 
 export default function Hero() {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
-  );
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     localStorage.setItem("theme", theme);
     const localTheme = localStorage.getItem("theme");
     console.log(localTheme);
     document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   useEffect(() => {
+    document.title = 'David Czepiel - Game Developer';
     AOS.init({ duration: 2000 });
   }, []);
+
   const handleToggle = (e) => {
     e.target.checked ? setTheme("dark") : setTheme("light");
   };
+
   return (
     <div>
       <header className="fixed bg-base-300 shadow-2xl shadow-neutral inset-x-0 top-0 z-50">
