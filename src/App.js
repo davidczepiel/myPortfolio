@@ -9,10 +9,10 @@ import Experience from "./components/Experience";
 export default function App() {
   return (
     <div className="overflow-x-hidden">
-      <Hero />
+      <Hero/>
       <Projects />
-      {/* <Experience/>
-      <Skills />  */}
+      <Experience/>
+      <Skills /> 
       <About />
       <Contact />
       <Footer /> 
