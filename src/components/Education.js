@@ -22,7 +22,7 @@ const myEvents=[
   }
 ]
 
-export default function Experience() {
+export default function Education() {
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -37,7 +37,7 @@ export default function Experience() {
           <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
             Working Experience
           </p>
-          <WorkingExperienceTimeline />
+          <EducationTimeLine/>
         </div>
       </div>
     </div>
@@ -45,23 +45,27 @@ export default function Experience() {
 }
 
 // https://tailgrail.com/tailwind/timeline
-const WorkingExperienceTimeline = () =>{
+const EducationTimeLine = () =>{
   return (
-    <section class="items-center py-16 font-poppins" data-aos="fade-right"> 
+    <section class="items-center py-16 font-poppins" data-aos="fade-left">
             <div class="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
                 <div class="w-full mx-auto lg:max-w-3xl">
 
                 {myEvents.map((project, index) => (
                   <div class="relative flex justify-between">
-                      {/* DATE FOR BIG SCREENS */}
-                      <div class="hidden w-24 py-3 md:block ">
-                          <h2 class="text-base font-medium ">Recreativos Franco</h2>
-                          <h2 class="text-xs font-medium ">Oct 2022-Present</h2>
-                      </div>
-                      {/* DATE FOR SMALL SCREENS */}
-                      <div class="absolute inline-block w-24 py-3 left-16 -top-12 md:hidden ">
-                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
-                          <h2 class="text-xs font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
+                      {/* CONTENT */}
+                      <div class="relative flex-1 mb-16  rounded shadow md:mb-8 bg-base-200 ring-2 ring-base-300">
+                          <div class="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -right-4">
+                              <div
+                                  class="h-10 origin-top-left transform rotate-45 bg-base-200 drop-shadow-lg ring-2 ring-base-300">
+                              </div>
+                          </div>
+                          <div class="relative z-20 px-6 pb-6 pt-3 text-left ">
+                              <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">Software Developer</p>
+                              <p class="text-gray-700 dark:text-gray-500">
+                                {myEvents[index].descriction}
+                              </p>
+                          </div>
                       </div>
                       {/* VERTICAL LINE SEPARATOR */}
                       <div class="flex flex-col items-center w-10 mr-4 md:w-24">
@@ -80,21 +84,16 @@ const WorkingExperienceTimeline = () =>{
                               </div>
                           </div>
                           {index !== myEvents.length- 1 && <div class="w-1 h-full bg-green-300"></div>}
-                          {index == myEvents.length- 1 && <div class="w-1 h-full bg-gradient-to-b from-green-300 via-green-300 to-transparent"></div>}
+                          {index == myEvents.length- 1 && <div class="w-1 h-full bg-gradient-to-b from-green-300 via-green-300 to-transparent"></div>}                      </div>
+                      {/* DATE FOR BIG SCREENS */}
+                      <div class="hidden w-24 py-3 md:block ">
+                          <h2 class="text-base font-medium ">Recreativos Franco</h2>
+                          <h2 class="text-xs font-medium ">Oct 2022-Present</h2>
                       </div>
-                      {/* CONTENT */}
-                      <div class="relative flex-1 mb-16  rounded shadow md:mb-8 bg-base-200 ring-2 ring-base-300">
-                          <div class="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
-                              <div
-                                  class="h-10 origin-top-right transform -rotate-45 bg-base-200 drop-shadow-lg ring-2 ring-base-300">
-                              </div>
-                          </div>
-                          <div class="relative z-20 px-6 pb-6 pt-3 text-left ">
-                              <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">Software Developer</p>
-                              <p class="text-gray-700 dark:text-gray-500">
-                                {myEvents[index].descriction}
-                              </p>
-                          </div>
+                      {/* DATE FOR SMALL SCREENS */}
+                      <div class="absolute inline-block w-24 py-3 left-16 -top-12 md:hidden ">
+                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
+                          <h2 class="text-xs font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
                       </div>
                   </div>
                 ))}
