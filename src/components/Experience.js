@@ -29,10 +29,10 @@ export default function Experience() {
   }, []);
 
   return (
-    <div id="projects">
+    <div id="experience">
       {/* INTRODUCTION TO THE PROJECTS */}
       <div className="mx-auto max-w-2xl px-6 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 text-center">
-        <div className="mx-32">
+        <div className="lg:mx-32">
           <h2 className="text-lg leading-7">Check out my</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
             Working Experience
@@ -59,9 +59,9 @@ const WorkingExperienceTimeline = () =>{
                           <h2 class="text-xs font-medium ">Oct 2022-Present</h2>
                       </div>
                       {/* DATE FOR SMALL SCREENS */}
-                      <div class="absolute inline-block w-24 py-3 left-16 -top-12 md:hidden ">
+                      <div class="absolute inline-block w-24 py-3 left-16 -top-12 md:hidden flex w-4/5 text-center">
                           <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
-                          <h2 class="text-xs font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
+                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400 ml-2">2002-2005</h2>
                       </div>
                       {/* VERTICAL LINE SEPARATOR */}
                       <div class="flex flex-col items-center w-10 mr-4 md:w-24">
