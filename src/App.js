@@ -14,7 +14,7 @@ export default function App() {
       <Projects />
       <Experience/>
       <Education/>
-      {/* <Skills />  */}
+      <Skills /> 
       <About />
       <Contact />
       <Footer /> 
