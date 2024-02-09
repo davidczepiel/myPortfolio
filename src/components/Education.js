@@ -6,20 +6,17 @@ import Modal from "./Modal";
 
 const myEvents=[
   {
-    heading:"Software Developer",
-    descriction:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    direction: "right"
+    TimeLineTitle:"University Degree",
+    Title: "Degree in Video Game Development at the Complutense University of Madrid",
+    Duration:"2018-2022",
+    Descriction:"The Degree in Video Game Development is conceived as an adaptation of the Degree in Computer Engineering that includes specific content on the characteristics of the hardware and software used in the development of video games.",
   },
   {
-    heading:"Event 2",
-    descriction:"Subjeading 2",
-    direction: "right"
+    TimeLineTitle:"Languages",
+    Title: "Languages",
+    Duration:"",
+    Descriction:"Spanish: Native, English: C1",
   },
-  {
-    heading:"Event 2",
-    descriction:"Lorem ipsum dolor sit amet, consectetur adipiso consequat. Duculpa qui officia deserunt mollit animtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrulaborum.",
-    direction: "right"
-  }
 ]
 
 export default function Education() {
@@ -61,9 +58,9 @@ const EducationTimeLine = () =>{
                               </div>
                           </div>
                           <div class="relative z-20 px-6 pb-6 pt-3 text-left ">
-                              <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">Software Developer</p>
+                              <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">{myEvents[index].Title}</p>
                               <p class="text-gray-700 dark:text-gray-500">
-                                {myEvents[index].descriction}
+                                {myEvents[index].Descriction}
                               </p>
                           </div>
                       </div>
@@ -87,13 +84,13 @@ const EducationTimeLine = () =>{
                           {index == myEvents.length- 1 && <div class="w-1 h-full bg-gradient-to-b from-green-300 via-green-300 to-transparent"></div>}                      </div>
                       {/* DATE FOR BIG SCREENS */}
                       <div class="hidden w-24 py-3 md:block ">
-                          <h2 class="text-base font-medium ">Recreativos Franco</h2>
-                          <h2 class="text-xs font-medium ">Oct 2022-Present</h2>
+                          <h2 class="text-base font-medium ">{myEvents[index].TimeLineTitle}</h2>
+                          <h2 class="text-xs font-medium ">{myEvents[index].Duration}</h2>
                       </div>
                       {/* DATE FOR SMALL SCREENS */}
                       <div class="absolute inline-block w-24 py-3 left-16 -top-12 md:hidden flex w-4/5 text-center">
-                          <h2 class="text-xs font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
-                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400 mr-2">2002-2005</h2>
+                          <h2 class="text-xs font-medium text-gray-700 dark:text-gray-400">{myEvents[index].TimeLineTitle}</h2>
+                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400 mr-2">{myEvents[index].Duration}</h2>
                       </div>
                   </div>
                 ))}

@@ -102,6 +102,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                       </div>
                   </div>
                   </div>
+                <div className="flex items-start justify-between border-y border-solid rounded-t mb-2"></div>
                   <p>
                     {ProjectsData[projectINDEX].ModalData.ModalContent()}
                   </p>

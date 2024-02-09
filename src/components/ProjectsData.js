@@ -51,9 +51,11 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return <div>
-                LumenFall offers an enthralling arcade puzzler experience where blocks of various colors fall, and your objective is to match 
-                them in an ever-escalating challenge. With its minimalistic style and a unique twist on the puzzlers genre, LumenFall presents a 
-                captivating gaming experience that keeps your mind engaged.
+                    <p className="pb-3">    
+                        LumenFall offers an enthralling arcade puzzler experience where blocks of various colors fall, and your objective is to match 
+                        them in an ever-escalating challenge. With its minimalistic style and a unique twist on the puzzlers genre, LumenFall presents a 
+                        captivating gaming experience that keeps your mind engaged.
+                    </p>
                 
                     <ul role="list" class="marker:text-base-400 list-disc pl-10 space-y-3">
                         <li>CHALLENGING GAMEPLAY: Dive into the exhilarating gameplay of block-matching as you aim for the highest scores. LumenFall provides an ever-escalating challenge to test your skills.</li>

@@ -6,20 +6,61 @@ import Modal from "./Modal";
 
 const myEvents=[
   {
-    heading:"Software Developer",
-    descriction:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    direction: "right"
+    TimeLineTitle:"Recreativos Franco",
+    Title: "Software Developer",
+    Duration:"Oct 2022-Present",
+    Descriction: ()=>{
+      return (
+        <div>
+          <p className="pb-2">
+          As a Software Developer at Recreativos Franco, my primary focus lies in C++ development, particularly in the creation of games for bingos and casinos, leveraging the company's proprietary engine and adhering to the industry's strict standards.          </p>
+          <p className="pb-2">
+            My responsibilities encompass the entire development lifecycle, from concept to execution. Working closely with the art and math departments, I ensure that each game not only meets regulatory requirements but also delivers an engaging and visually appealing experience for players.
+          </p>
+          <h3 className="font-bold text-lg pb-2">Notable Contributions:</h3>
+          <ul className="list-disc pl-6">
+            <li className="pb-2">
+              Developed two bingo games and adapted them to comply with regulatory frameworks, including the specific requirements of the Norwegian market.
+            </li>
+            <li className="pb-2">
+              Developed four unique slot games as part of a slot machine project for the casino sector.
+            </li>
+            <li>
+              Enhanced the gaming architecture to support future casino projects.
+            </li>
+          </ul>
+        </div>
+      );
+    }
   },
   {
-    heading:"Event 2",
-    descriction:"Subjeading 2",
-    direction: "right"
+    TimeLineTitle:"Padaone Games",
+    Title: "Frontend Developer (internship)",
+    Duration:"Jul 2022-Aug 2022",
+    Descriction: ()=>{
+      return (
+        <div>
+          <p className="pb-2">
+          As a Software Developer at Recreativos Franco, my primary focus lies in C++ development, particularly in the creation of games for bingos and casinos, leveraging the company's proprietary engine and adhering to the industry's strict standards.          </p>
+          <p className="pb-2">
+            My responsibilities encompass the entire development lifecycle, from concept to execution. Working closely with the art and math departments, I ensure that each game not only meets regulatory requirements but also delivers an engaging and visually appealing experience for players.
+          </p>
+          <h3 className="font-bold text-lg pb-2">Notable Contributions:</h3>
+          <ul className="list-disc pl-6">
+            <li className="pb-2">
+              Developed two bingo games and adapted them to comply with regulatory frameworks, including the specific requirements of the Norwegian market.
+            </li>
+            <li className="pb-2">
+              Contributed to the creation of a slot machine for the casino sector.
+            </li>
+            <li>
+              Enhanced the gaming architecture to support future casino projects.
+            </li>
+          </ul>
+        </div>
+      );
+    }
   },
-  {
-    heading:"Event 2",
-    descriction:"Lorem ipsum dolor sit amet, consectetur adipiso consequat. Duculpa qui officia deserunt mollit animtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrulaborum.",
-    direction: "right"
-  }
 ]
 
 export default function Experience() {
@@ -55,13 +96,13 @@ const WorkingExperienceTimeline = () =>{
                   <div class="relative flex justify-between">
                       {/* DATE FOR BIG SCREENS */}
                       <div class="hidden w-24 py-3 md:block ">
-                          <h2 class="text-base font-medium ">Recreativos Franco</h2>
-                          <h2 class="text-xs font-medium ">Oct 2022-Present</h2>
+                          <h2 class="text-base font-medium ">{myEvents[index].TimeLineTitle}</h2>
+                          <h2 class="text-xs font-medium ">{myEvents[index].Duration}</h2>
                       </div>
                       {/* DATE FOR SMALL SCREENS */}
                       <div class="absolute inline-block w-24 py-3 left-16 -top-12 md:hidden flex w-4/5 text-center">
-                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">2002-2005</h2>
-                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400 ml-2">2002-2005</h2>
+                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">{myEvents[index].TimeLineTitle}</h2>
+                          <h2 class="text-base font-medium text-gray-700 dark:text-gray-400 ml-2">{myEvents[index].Duration}</h2>
                       </div>
                       {/* VERTICAL LINE SEPARATOR */}
                       <div class="flex flex-col items-center w-10 mr-4 md:w-24">
@@ -90,9 +131,9 @@ const WorkingExperienceTimeline = () =>{
                               </div>
                           </div>
                           <div class="relative z-20 px-6 pb-6 pt-3 text-left ">
-                              <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">Software Developer</p>
+                              <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">{myEvents[index].Title}</p>
                               <p class="text-gray-700 dark:text-gray-500">
-                                {myEvents[index].descriction}
+                                {myEvents[index].Descriction()}
                               </p>
                           </div>
                       </div>
