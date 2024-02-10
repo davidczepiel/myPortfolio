@@ -9,14 +9,32 @@ const myEvents=[
     TimeLineTitle:"University Degree",
     Title: "Degree in Video Game Development at the Complutense University of Madrid",
     Duration:"2018-2022",
-    Descriction:"The Degree in Video Game Development is conceived as an adaptation of the Degree in Computer Engineering that includes specific content on the characteristics of the hardware and software used in the development of video games.",
+    Descriction: ()=>{
+      return (  <div>
+                  <p className="pb-2">
+                    The Degree in Video Game Development is an adaptation of the Degree in Computer Engineering that includes specific content on the characteristics of the hardware and software used in the development of video games.          
+                  </p>
+                </div>
+      );
+    }
   },
   {
     TimeLineTitle:"Languages",
     Title: "Languages",
     Duration:"",
-    Descriction:"Spanish: Native, English: C1",
-  },
+    Descriction: ()=>{
+      return (  <div>
+                  <ul className="list-disc pl-6">
+                    <li className="pb-2">
+                      SPANISH: Native
+                    </li>
+                    <li className="pb-2">
+                      ENGLISH: B2
+                    </li>
+                  </ul>
+                </div>
+      );
+    }  },
 ]
 
 export default function Education() {
@@ -60,7 +78,7 @@ const EducationTimeLine = () =>{
                           <div class="relative z-20 px-6 pb-6 pt-3 text-left ">
                               <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">{myEvents[index].Title}</p>
                               <p class="text-gray-700 dark:text-gray-500">
-                                {myEvents[index].Descriction}
+                                {myEvents[index].Descriction()}
                               </p>
                           </div>
                       </div>

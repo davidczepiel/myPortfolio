@@ -34,50 +34,55 @@ export default function Carousel({
         <div className={`flex h-full place-content-center`}>
           { curr < ProjectsData[projectIndex].ModalData.VideosToShow.length 
             ?
-              <iframe class=" w-full h-full " src={ProjectsData[0].ModalData.VideosToShow[0]} allowFullScreen/>
+              <iframe class=" w-full h-full " src={ProjectsData[projectIndex].ModalData.VideosToShow[curr]} allowFullScreen/>
             :
               <img src={ProjectsData[projectIndex].ModalData.ImagesToShow[curr - ProjectsData[projectIndex].ModalData.VideosToShow.length]} className=" object-cover group-hover:opacity-100" />
           }
         </div>
 
-        {/* BUTTON TO NAVIGATE TO THE LEFT */}
-          <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
-            <button onClick={prev} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-              <ChevronLeft size={40} />
-            </button>
-          </div>
-        {/* BUTTON TO NAVIGATE TO THE RIGHT */}
-          <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
-            <button onClick={next} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-              <ChevronRight size={40} />
-            </button>
-          </div>
+        {(ProjectsData[projectIndex].ModalData.ImagesToShow.length + ProjectsData[projectIndex].ModalData.VideosToShow.length) > 1 
+        && 
+        <>
+            {/* BUTTON TO NAVIGATE TO THE LEFT */}
+            <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
+              <button onClick={prev} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
+                <ChevronLeft size={40} />
+              </button>
+            </div>
+            {/* BUTTON TO NAVIGATE TO THE RIGHT */}
+            <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
+              <button onClick={next} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
+                <ChevronRight size={40} />
+              </button>
+            </div>
 
-         {/* LOWER DOTS TO SHOW WHERE IN THE CAROUSEL ARE WE CURRENTLY */}
-        <div className="absolute bottom-4 right-0 left-0">
-            <div className="flex items-center justify-center gap-2">
-              {/* VIDEO DOTS */}
-            {ProjectsData[projectIndex].ModalData.VideosToShow.map((_, i) => (
-              <div
-              className={`
-              transition-all w-3 h-3 bg-white rounded-full
-              ${curr === i ? "p-2" : "bg-opacity-50"}
-              `}
-              />
-              ))}
-              {/* IMAGE DOTS */}
-            {ProjectsData[projectIndex].ModalData.ImagesToShow.map((_, i) => (
+            {/* LOWER DOTS TO SHOW WHERE IN THE CAROUSEL ARE WE CURRENTLY */}
+            <div className="absolute bottom-4 right-0 left-0">
+              <div className="flex items-center justify-center gap-2">
+                {/* VIDEO DOTS */}
+              {ProjectsData[projectIndex].ModalData.VideosToShow.map((_, i) => (
+                <div
+                className={`
+                transition-all w-3 h-3 bg-white rounded-full
+                ${curr === i ? "p-2" : "bg-opacity-50"}
+                `}
+                />
+                ))}
+                {/* IMAGE DOTS */}
+              {ProjectsData[projectIndex].ModalData.ImagesToShow.map((_, i) => (
                 <div
                 className={`
                 transition-all w-3 h-3 bg-white rounded-full
                 ${((curr - ProjectsData[projectIndex].ModalData.VideosToShow.length) === i) 
                   ? "p-2" 
                   : "bg-opacity-50"}
-                `}
-                />
-            ))}
+                  `}
+                  />
+                  ))}
+              </div>
             </div>
-        </div>
+        </>
+        }
     </div>
   )
 }

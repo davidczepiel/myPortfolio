@@ -28,6 +28,8 @@ import DGTModalPreview0 from "../Resources/Projects/DGT/DGTModalPreview0.png"
 import DGTModalPreview1 from "../Resources/Projects/DGT/DGTModalPreview1.png"
 import DGTModalPreview2 from "../Resources/Projects/DGT/DGTModalPreview2.png"
 
+import COCGWPreview from "../Resources/Projects/CallOfCookingGardenWarfare/COCGWPreview.png"
+import TheDarkMazePreview from "../Resources/Projects/TheDarkMaze/TheDarkMazePreview.png"
 
 export const ProjectsData = [
     ////////////////////LUMENFALL/////////////////
@@ -42,8 +44,6 @@ export const ProjectsData = [
             title:'LumenFall',
             badges:["Block Puzzler", "Android", "C# Unity", "2023"],
             ImagesToShow:[
-                LumenFallPreview,
-               LumenFallModalPreview0,
                LumenFallModalPreview1,
             ],
             VideosToShow:[
@@ -77,19 +77,35 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Animal Cooking',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            badges:["Arcade", "PC", "SDL2", "Feb 2020 - May 2020"],
             ImagesToShow:[
                 AnimalCookingModalPreview0,
                 AnimalCookingModalPreview1,
             ],
-            VideosToShow:[],
+            VideosToShow:[
+                "https://www.youtube.com/embed/e4pwn-ap8Fg",
+            ],
             ModalContent: ()=>{
-                return <div>
-                    Animal Cooking is a frantic game in which two players will have to test their cooking skills in the annual culinary competition. To become the best chefs, you will have to overcome 31 levels, across 5 different biomes, overcoming the obstacles you encounter along the way. Find the ingredients, feed your customers, clean up, avoid burning the food and, above all, do it as a team! Enjoy this wonderful project and remember:
-
-                    Pay attention to the cooking and don't forget to check the fire!!!!
-
-                </div>
+                return  <div>
+                            <p className="pb-2">
+                                Animal Cooking is a frantic game in which two players will have to test their cooking skills in the annual culinary competition. To become the best chefs, you will have to overcome 31 levels, across 5 different biomes, overcoming the obstacles you encounter along the way. Find the ingredients, feed your customers, clean up, avoid burning the food and, above all, do it as a team! Enjoy this wonderful project and remember:
+                            </p>
+                            <p className="pb-2">
+                                Pay attention to the cooking and don't forget to check the fire!!!!
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Ogre 3D was used to control all the rendering
+                            </li>
+                            <li className="pb-2">
+                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                            </li>
+                            <li>
+                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                            </li>
+                            </ul>
+                        </div>
             }
         }
     },
@@ -104,16 +120,223 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Unitario Engine',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            badges:["Game Engine", "PC", "SDL2 Ogre3D Physx FMOD", "Feb 2021 - May 2021"],
             ImagesToShow:[
                 "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
                 "https://wallpapercave.com/wp/wp3386769.jpg",
                 "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
             ],
-            VideosToShow:[],
+            VideosToShow:[
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                                Unitario Engine is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, once a basic project core is established, it is easy to add more content to the project.                            
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Ogre 3D was used to control all the rendering
+                            </li>
+                            <li className="pb-2">
+                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                            </li>
+                            <li>
+                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////THE DARK MAZE/////////////////
+    {
+        CardData:
+        {
+            name: "The Dark Maze",
+            imageSrc: TheDarkMazePreview,
+            used: "C++, LUA, Physx, Ogre3D, FMOD",
+            description: "Custom C++ game engine made from scratch",
+        },
+        ModalData:{
+            title:'The Dark Maze',
+            badges:["Labyrinth", "PC", "SDL2 Ogre3D Physx FMOD", "Feb 2021 - May 2021"],
+            ImagesToShow:[
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/dlo_V2mefLQ",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                                This is a first-person stealth game in which the player finds themselves inside a dark maze, and their objective is to find the key that allows them to escape. However, the maze is filled with enemies and traps, so the player will have to make use of medkits and switches to navigate through it safely.                            
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Ogre 3D was used to control all the rendering
+                            </li>
+                            <li className="pb-2">
+                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                            </li>
+                            <li>
+                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////CALL OF COOKING GARDEN WARFARE/////////////////
+    {
+        CardData:
+        {
+            name: "Call of Cooking Garden Warfare",
+            imageSrc: COCGWPreview,
+            used: "C++, LUA, Physx, Ogre3D, FMOD",
+            description: "Custom C++ game engine made from scratch",
+        },
+        ModalData:{
+            title:'Call of Cooking Garden Warfare',
+            badges:["Top down shooter", "PC", "SDL2 Ogre3D Physx FMOD", "Feb 2021 - May 2021"],
+            ImagesToShow:[
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/_F6UqZ6lsIo",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                                This is a top down arcade game where the player faces endless waves of enemies, and the goal is to survive as many rounds as possible. After each wave, the player is offered a series of upgrades for his character to help him during his run.                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Ogre 3D was used to control all the rendering
+                            </li>
+                            <li className="pb-2">
+                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                            </li>
+                            <li>
+                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////APRUEBAME ESTA/////////////////
+    {
+        CardData:{
+            name: "Apruébame Esta",
+            imageSrc: ApruebameEstaPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the GiftJam 2023",
+        },
+        ModalData:{
+            title:'Apruébame Esta',
+            badges:["Rythm", "WEB", "GDSCRIPT Godot", "2024"],
+            ImagesToShow:[
+                ApruebameEstaModalPreview0,
+                ApruebameEstaModalPreview1,
+                ApruebameEstaModalPreview2,
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/c1AQ84mtQfM",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                                Tired of failing and failing, Ragnahilda has not only not given up, but is going to fight for her pass in the noblest of ways. A duel to the death with the most iconic professors of her faculty. Boxing. And to the rhythm of her favourite songs.                
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Developed as part of the Gift Jam 2023
+                            </li>
+                            <li className="pb-2">
+                                Made in a span fo 14 days
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////DGT/////////////////
+    {
+        CardData:{
+            name: "Drifting Gibbon Time",
+            imageSrc: DGTPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the Global Jam 2024",
+        },
+        ModalData:{
+            title:'Drifting Gibbon Time',
+            badges:["Arcade", "WEB", "GDScript Godot", "2024"],
+            ImagesToShow:[
+                DGTModalPreview0,
+                DGTModalPreview1,
+                DGTModalPreview2,
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/uJnBRfu4508",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                                Gibbon wants BANANA. Gibbon has motorized trycicle. There are no BANANAS on sight. But there are people and animals around the city. Maybe they have BANANAS?                    
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Developed as part of the Global Game Jam 2024 with "Make me laugh" as theme
+                            </li>
+                            <li className="pb-2">
+                                Awarded as best art by the jury and best game by the public at voxel school/UCM site for Global Game Jam 2024
+                            </li>
+                            <li>
+                                Made in a span of 48 hours
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////THE CAT THAT WATCHED THE STARS/////////////////
+    {
+        CardData:{
+            name: "The cat that watched the stars",
+            imageSrc: TheCatThatWatchedTheStarsPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the Mermelada Jam 2023",
+        },
+        ModalData:{
+            title:'The cat that watched the stars',
+            badges:["Arcade", "WEB", "GDScript Godot", "2023"],
+            ImagesToShow:[
+                TheCatThatWatchedTheStarsModalPreview0,
+                TheCatThatWatchedTheStarsModalPreview1,
+                TheCatThatWatchedTheStarsModalPreview2,
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/kdeup3j2obk",
+            ],
             ModalContent: ()=>{
                 return <div>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.                
+                    <p className="pb-2">
+                        Some say that cats can see beyond the planes of reality we humans are used to, and can even interact with entities beyond our comprehension. Watch the starry sky and capture the shooting stars and fireworks that you, a curious kitty, reach out with your paw.                
+                    </p>
+                    <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                    <ul className="list-disc pl-6">
+                    <li className="pb-2">
+                        Developed as part of the Mermelada Jam 2023
+                    </li>
+                    <li className="pb-2">
+                        Built with Godot combining the use of C# and GDScript                          
+                    </li>
+                    <li>
+                        Made in a span of 48 hours
+                    </li>
+                    </ul>
                 </div>
             }
         }
@@ -128,89 +351,30 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'OhnO! clone',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            badges:["Puzzle", "Android PC", "Java", "2023"],
             ImagesToShow:[
-                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-                "https://wallpapercave.com/wp/wp3386769.jpg",
-                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
             ],
-            VideosToShow:[],
+            VideosToShow:[
+                "https://www.youtube.com/embed/tNf_QVNo5os",
+            ],
             ModalContent: ()=>{
                 return <div>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.                
-                </div>
-            }
-        }
-    },
-    ////////////////////APRUEBAME ESTA/////////////////
-    {
-        CardData:{
-            name: "Apruébame Esta",
-            imageSrc: ApruebameEstaPreview,
-            used: "GDScript, Godot",
-            description: "A game made for the GiftJam 2023",
-        },
-        ModalData:{
-            title:'Apruébame Esta',
-            badges:["Rythm", "WEB", "GDSCRIPT GODOT", "2024"],
-            ImagesToShow:[
-                ApruebameEstaModalPreview0,
-                ApruebameEstaModalPreview1,
-                ApruebameEstaModalPreview2,
-            ],
-            VideosToShow:[],
-            ModalContent: ()=>{
-                return <div>
-                    Tired of failing and failing, Ragnahilda has not only not given up, but is going to fight for her pass in the noblest of ways. A duel to the death with the most iconic professors of her faculty. Boxing. And to the rhythm of her favourite songs.                
-                </div>
-            }
-        }
-    },
-    ////////////////////DGT/////////////////
-    {
-        CardData:{
-            name: "Drifting Gibbon Time",
-            imageSrc: DGTPreview,
-            used: "GDScript, Godot",
-            description: "A game made for the Global Jam 2024",
-        },
-        ModalData:{
-            title:'Drifting Gibbon Time',
-            badges:["Arcade", "WEB", "GDSCRIPT GODOT", "2024"],
-            ImagesToShow:[
-                DGTModalPreview0,
-                DGTModalPreview1,
-                DGTModalPreview2,
-            ],
-            VideosToShow:[],
-            ModalContent: ()=>{
-                return <div className="text-balance">
-                    Gibbon wants BANANA. Gibbon has motorized trycicle. There are no BANANAS on sight. But there are people and animals around the city. Maybe they have BANANAS?                    
-                </div>
-            }
-        }
-    },
-    ////////////////////THE CAT THAT WATCHED THE STARS/////////////////
-    {
-        CardData:{
-            name: "The cat that watched the stars",
-            imageSrc: TheCatThatWatchedTheStarsPreview,
-            used: "GDScript, Godot",
-            description: "A game made for the Mermelada Jam",
-        },
-        ModalData:{
-            title:'The cat that watched the stars',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
-            ImagesToShow:[
-                TheCatThatWatchedTheStarsModalPreview0,
-                TheCatThatWatchedTheStarsModalPreview1,
-                TheCatThatWatchedTheStarsModalPreview2,
-            ],
-            VideosToShow:[],
-            ModalContent: ()=>{
-                return <div className="text-balance">
-                    Some say that cats can see beyond the planes of reality we humans are used to, and can even interact with entities beyond our comprehension. Watch the starry sky and capture the shooting stars and fireworks that you, a curious kitty, reach out with your paw.                
-                    </div>
+                            <p className="pb-2">
+                                Unitario Engine is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, once a basic project core is established, it is easy to add more content to the project.                            
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Ogre 3D was used to control all the rendering
+                            </li>
+                            <li className="pb-2">
+                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                            </li>
+                            <li>
+                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                            </li>
+                            </ul>
+                        </div>
             }
         }
     },
@@ -226,15 +390,28 @@ export const ProjectsData = [
             title:'Flow Free clone',
             badges:["Block Puzzler", "Android", "C# Unity", "2023"],
             ImagesToShow:[
-                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-                "https://wallpapercave.com/wp/wp3386769.jpg",
-                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
             ],
-            VideosToShow:[],
+            VideosToShow:[
+                "https://www.youtube.com/embed/Q8PUYb0ya7s",
+            ],
             ModalContent: ()=>{
                 return <div>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.                
-                </div>
+                            <p className="pb-2">
+                                Unitario Engine is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, once a basic project core is established, it is easy to add more content to the project.                            
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Ogre 3D was used to control all the rendering
+                            </li>
+                            <li className="pb-2">
+                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                            </li>
+                            <li>
+                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                            </li>
+                            </ul>
+                        </div>
             }
         }
     },
@@ -248,17 +425,33 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Wolfestein3D on PS4',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            badges:["Walker", "PC PS4", "C++", "2023"],
             ImagesToShow:[
-                Wolfestein3DModalPreview0,
-                "https://wallpapercave.com/wp/wp3386769.jpg",
-                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
             ],
-            VideosToShow:[],
+            VideosToShow:[
+                "https://www.youtube.com/embed/lHOYLbZ7_oA",
+            ],
             ModalContent: ()=>{
                 return <div>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, lacinia neque justo mollis sagittis nisi phasellus taciti, urna faucibus montes in dictumst ridiculus. Primis tellus rutrum auctor venenatis tristique ridiculus netus pulvinar nostra pretium malesuada arcu, facilisis enim risus magnis felis morbi congue laoreet cursus metus ad proin dapibus, tempus luctus vivamus montes nisl dui donec condimentum nibh nisi aliquam. Tortor venenatis curabitur id taciti lacinia posuere bibendum aliquam lectus, faucibus sapien iaculis donec sociosqu urna conubia metus, commodo consequat accumsan mi purus varius interdum maecenas.                
-                </div>
+                            <p className="pb-2">
+                            A copy of Wolfenstein 3D (1992) maps and movement. Developed using C++ for PC and PS4.                           
+                            </p>
+                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Multiplatform architecture (PC and PS4)
+                            </li>
+                            <li className="pb-2">
+                                Multithreading architecture. Two threads (render and logic) communicating through a concurrent queue                            
+                            </li>
+                            <li>
+                                PS4 memory and render buffer management. Using the CPU for render in PS4 and GPU in PC
+                            </li>
+                            <li>
+                                Simulation of a 3D world using raycast algorithm in a 2D world
+                            </li>
+                            </ul>
+                        </div>
             }
         }
     },

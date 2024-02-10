@@ -54,7 +54,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                   <span>&times;</span>
                 </button>
               </div>
-
+              {/* UPPER BORDER */}
               <div className="flex items-start justify-between mx-5 border-y border-solid  rounded-t"></div>
               <div className="relative p-6 flex-auto">
                 <div className="mb-4 ">
@@ -102,7 +102,8 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                       </div>
                   </div>
                   </div>
-                <div className="flex items-start justify-between border-y border-solid rounded-t mb-2"></div>
+                {/* MIDDLE BORDER */}
+                <div className="flex items-start justify-between border-y border-solid rounded-t mb-2 opacity-5"/>
                   <p>
                     {ProjectsData[projectINDEX].ModalData.ModalContent()}
                   </p>
