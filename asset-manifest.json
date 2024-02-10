@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.2386ef14.css",
-    "main.js": "/static/js/main.e6370ce3.js",
+    "main.css": "/static/css/main.ffc8a78b.css",
+    "main.js": "/static/js/main.a55089ac.js",
     "static/media/LumenFallModalPreview1.png": "/static/media/LumenFallModalPreview1.10847bc56bd44bad8d26.png",
     "static/media/ApruebameEstaPreview.png": "/static/media/ApruebameEstaPreview.8b3760e5682328a9ff49.png",
+    "static/media/COCGWPreview.png": "/static/media/COCGWPreview.da33bd596443a16e707b.png",
     "static/media/Wolfestein3DPreview.png": "/static/media/Wolfestein3DPreview.9a725875f7506eb81bdf.png",
+    "static/media/TheDarkMazePreview.png": "/static/media/TheDarkMazePreview.362f94e3e501baa934fa.png",
     "static/media/avatar.png": "/static/media/avatar.8c67ce286cd10b8fcf27.png",
     "static/media/DGTModalPreview1.png": "/static/media/DGTModalPreview1.9526b0aecef4cb1ec16f.png",
     "static/media/AnimalCookingModalPreview0.png": "/static/media/AnimalCookingModalPreview0.5a030fed1565ac13073d.png",
@@ -27,11 +29,11 @@
     "static/media/TCTWTSAVModalPreview0.jpg": "/static/media/TCTWTSAVModalPreview0.43b2655d222328858293.jpg",
     "static/media/FlowFreePreview.png": "/static/media/FlowFreePreview.b7a545ad74c7298da398.png",
     "index.html": "/index.html",
-    "main.2386ef14.css.map": "/static/css/main.2386ef14.css.map",
-    "main.e6370ce3.js.map": "/static/js/main.e6370ce3.js.map"
+    "main.ffc8a78b.css.map": "/static/css/main.ffc8a78b.css.map",
+    "main.a55089ac.js.map": "/static/js/main.a55089ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.2386ef14.css",
-    "static/js/main.e6370ce3.js"
+    "static/css/main.ffc8a78b.css",
+    "static/js/main.a55089ac.js"
   ]
 }
