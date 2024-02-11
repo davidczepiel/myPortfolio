@@ -12,8 +12,19 @@ const myEvents=[
     Descriction: ()=>{
       return (  <div>
                   <p className="pb-2">
-                    The Degree in Video Game Development is an adaptation of the Degree in Computer Engineering that includes specific content on the characteristics of the hardware and software used in the development of video games.          
+                    This degree is an adaptation of the Degree in Computer Engineering, the program covered a broad spectrum of topics, including game design principles, computer graphics, artificial intelligence... all of which had the programming side of things as the main focus. With an emphasis on hands-on projects, I have been able to translate classroom knowledge into practical skills. Some of the highlights being: 
                   </p>
+                  <ul className="list-disc pl-6">
+                    <li className="pb-2">
+                      Developed games for platforms such as PC, Android, and PS4, gaining insights into platform-specific requirements 
+                    </li>
+                    <li className="pb-2">
+                      Proficient in C++, understanding its principles and techniques
+                    </li>
+                    <li>
+                      Developed a game engine from scratch, providing insight into the intricate workings of game engines
+                    </li>
+                  </ul>
                 </div>
       );
     }
