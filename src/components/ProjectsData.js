@@ -388,7 +388,7 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Flow Free clone',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            badges:["Puzzle", "Android", "C# Unity", "2023"],
             ImagesToShow:[
             ],
             VideosToShow:[

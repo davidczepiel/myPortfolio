@@ -41,22 +41,11 @@ const myEvents=[
       return (
         <div>
           <p className="pb-2">
-          As a Software Developer at Recreativos Franco, my primary focus lies in C++ development, particularly in the creation of games for bingos and casinos, leveraging the company's proprietary engine and adhering to the industry's strict standards.          </p>
-          <p className="pb-2">
-            My responsibilities encompass the entire development lifecycle, from concept to execution. Working closely with the art and math departments, I ensure that each game not only meets regulatory requirements but also delivers an engaging and visually appealing experience for players.
+            In this role, my main responsibility was to develop a website tailored for creating treasure hunts for mobile devices, specifically designed for museums. These treasure hunts were data-driven and featured a variety of challenges, including scanning paintings, solving quizzes, and navigating to specific points within the museum using geolocation.          
           </p>
-          <h3 className="font-bold text-lg pb-2">Notable Contributions:</h3>
-          <ul className="list-disc pl-6">
-            <li className="pb-2">
-              Developed two bingo games and adapted them to comply with regulatory frameworks, including the specific requirements of the Norwegian market.
-            </li>
-            <li className="pb-2">
-              Contributed to the creation of a slot machine for the casino sector.
-            </li>
-            <li>
-              Enhanced the gaming architecture to support future casino projects.
-            </li>
-          </ul>
+          <p className="pb-2">
+          The website's primary objective was to serve as an editor for configuring the data used by the game to compose its levels. My main task was to develop these forms in an intuitive and user-friendly manner to streamline the process for end-users.
+          </p>
         </div>
       );
     }
