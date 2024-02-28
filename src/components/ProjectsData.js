@@ -36,13 +36,13 @@ export const ProjectsData = [
     {
         CardData:{
             name: "LumenFall",
-            description: "A more challenging puzzle game",
+            description: "A fresh twist on the block puzzle genre",
             imageSrc: LumenFallPreview,
             used: "C#, Unity",
         },
         ModalData:{
             title:'LumenFall',
-            badges:["Block Puzzler", "Android", "C# Unity", "2023"],
+            badges:["Arcade", "Android", "C# Unity", "2023"],
             ImagesToShow:[
                LumenFallModalPreview1,
             ],
@@ -52,16 +52,132 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return <div>
                     <p className="pb-3">    
-                        LumenFall offers an enthralling arcade puzzler experience where blocks of various colors fall, and your objective is to match 
-                        them in an ever-escalating challenge. With its minimalistic style and a unique twist on the puzzlers genre, LumenFall presents a 
-                        captivating gaming experience that keeps your mind engaged.
+                        LumenFall is an arcade game for Android devices that introduces a fresh twist to the "falling blocks" genre. 
+                        In it, the player is given a board on which pieces of different colors fall and his objective is to match them to prevent the board form filling up.
+                         The entire game was developed solely by me over the course of one year. 
                     </p>
                 
                     <ul role="list" class="marker:text-base-400 list-disc pl-10 space-y-3">
-                        <li>CHALLENGING GAMEPLAY: Dive into the exhilarating gameplay of block-matching as you aim for the highest scores. LumenFall provides an ever-escalating challenge to test your skills.</li>
-                        <li>EASY TO LEARN: LumenFall's gameplay is easy to pick up, making it accessible to players of all ages and skill levels. But don't be fooled – it still offers a rewarding challenge for puzzle enthusiasts.</li>
-                        <li>MULTIPLE PLAYSTYLES: Tailor your experience by choosing from multiple game modes and board sizes.</li>
-                        <li>SKIN CUSTOMIZATION: Personalize your experience by choosing from a variety of skins and use the skin editor to create your unique designs.</li>
+                        <li><strong>EASY TO LEARN:</strong> LumenFall's gameplay is easy to pick up, making it accessible to players of all skill levels, while still offerring a rewarding challenge for puzzle enthusiasts.</li>
+                        <li><strong>MULTIPLE PLAYSTYLES:</strong> With 5 game modes and 5 board sizes, players have a range of options to tailor their gaming experience.</li>
+                        <li><strong>CUSTOMIZATION:</strong> Change the game's appearance by choosing from a variety of skins and use the skin editor to create your unique designs.</li>
+                    </ul>
+                </div>
+            }
+        }
+    },
+    ////////////////////APRUEBAME ESTA/////////////////
+    {
+        CardData:{
+            name: "Apruébame Esta",
+            imageSrc: ApruebameEstaPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the GiftJam 2023",
+        },
+        ModalData:{
+            title:'Apruébame Esta',
+            badges:["Rythm", "WEB", "GDScript Godot", "Dec 2023"],
+            ImagesToShow:[
+                ApruebameEstaModalPreview0,
+                ApruebameEstaModalPreview1,
+                ApruebameEstaModalPreview2,
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/c1AQ84mtQfM",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                            Apruebame Esta is a rythm game developed for the Gift Jam 2023, in it, you play as Ragnahilda, a determined student who, after facing academic setbacks, has decided to obtain her exam pass in an unconventional way, by engaging in boxing matches against her teachers.                
+                            </p>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Made in a span fo 14 days.
+                            </li>
+                            <li className="pb-2">
+                                All of the art and music was made during the jam.
+                            </li>
+                            <li className="pb-2">
+                                Developed as gift for the teachers of the Degree in Game Development at the Complutense University of Madrid.
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////DGT/////////////////
+    {
+        CardData:{
+            name: "Drifting Gibbon Time",
+            imageSrc: DGTPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the Global Jam 2024",
+        },
+        ModalData:{
+            title:'Drifting Gibbon Time',
+            badges:["Arcade", "WEB", "GDScript Godot", "Jan 2024"],
+            ImagesToShow:[
+                DGTModalPreview0,
+                DGTModalPreview1,
+                DGTModalPreview2,
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/uJnBRfu4508",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                            Drifting Gibbon Time is a arcade-driving game created for the Global Game Jam 2024, with "make me laugh" as theme. 
+                            In it, you play as a gibbon riding a motorized tricycle, aiming to collide with civilians and rank up as many points as possible, 
+                            while avoiding the city's obstacles.                    
+                            </p>
+                            <ul className="list-disc pl-6">
+                            <li className="pb-2">
+                                Developed in a span of 48 hours.
+                            </li>
+                            <li className="pb-2">
+                                Awarded as best art by the jury and best game by the public at voxel school/UCM site for Global Game Jam 2024.
+                            </li>
+                            </ul>
+                        </div>
+            }
+        }
+    },
+    ////////////////////THE CAT THAT WATCHED THE STARS/////////////////
+    {
+        CardData:{
+            name: "The cat that watched the stars",
+            imageSrc: TheCatThatWatchedTheStarsPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the Mermelada Jam 2023",
+        },
+        ModalData:{
+            title:'The cat that watched the stars',
+            badges:["Arcade", "WEB", "GDScript C# Godot", "2023"],
+            ImagesToShow:[
+                TheCatThatWatchedTheStarsModalPreview0,
+                TheCatThatWatchedTheStarsModalPreview1,
+                TheCatThatWatchedTheStarsModalPreview2,
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/kdeup3j2obk",
+            ],
+            ModalContent: ()=>{
+                return <div>
+                    <p className="pb-2">
+                        Some say that cats can see beyond the planes of reality we humans are used to, and can even interact with entities beyond our comprehension. Watch the starry sky and capture the shooting stars and fireworks that you, a curious kitty, reach out with your paw.                
+                    </p>
+                    <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                    <ul className="list-disc pl-6">
+                    <li>
+                        Made in a span of 48 hours
+                    </li>
+                    <li className="pb-2">
+                        Developed as part of the Mermelada Jam 2023
+                    </li>
+                    <li className="pb-2">
+                        Built with Godot combining the use of C# and GDScript                          
+                    </li>
                     </ul>
                 </div>
             }
@@ -88,21 +204,15 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return  <div>
                             <p className="pb-2">
-                                Animal Cooking is a frantic game in which two players will have to test their cooking skills in the annual culinary competition. To become the best chefs, you will have to overcome 31 levels, across 5 different biomes, overcoming the obstacles you encounter along the way. Find the ingredients, feed your customers, clean up, avoid burning the food and, above all, do it as a team! Enjoy this wonderful project and remember:
+                            Animal Cooking is a fast-paced cooking game designed for two players, which draws inspiration from the chaotic gameplay of Overcooked. 
+                            Players must work together in a divided kitchen environment to assemble and cook dishes while hunting down elusive living ingredients.
                             </p>
-                            <p className="pb-2">
-                                Pay attention to the cooking and don't forget to check the fire!!!!
-                            </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
                             <ul className="list-disc pl-6">
                             <li className="pb-2">
-                                Ogre 3D was used to control all the rendering
+                                The game was developed entirely in C++ using SDL2.
                             </li>
                             <li className="pb-2">
-                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
-                            </li>
-                            <li>
-                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                                It has 31 levels across 5 different biomes, each presenting different dishes and challenges to overcome.                         
                             </li>
                             </ul>
                         </div>
@@ -221,123 +331,6 @@ export const ProjectsData = [
                             </li>
                             </ul>
                         </div>
-            }
-        }
-    },
-    ////////////////////APRUEBAME ESTA/////////////////
-    {
-        CardData:{
-            name: "Apruébame Esta",
-            imageSrc: ApruebameEstaPreview,
-            used: "GDScript, Godot",
-            description: "A game made for the GiftJam 2023",
-        },
-        ModalData:{
-            title:'Apruébame Esta',
-            badges:["Rythm", "WEB", "GDSCRIPT Godot", "2024"],
-            ImagesToShow:[
-                ApruebameEstaModalPreview0,
-                ApruebameEstaModalPreview1,
-                ApruebameEstaModalPreview2,
-            ],
-            VideosToShow:[
-                "https://www.youtube.com/embed/c1AQ84mtQfM",
-            ],
-            ModalContent: ()=>{
-                return  <div>
-                            <p className="pb-2">
-                                Tired of failing and failing, Ragnahilda has not only not given up, but is going to fight for her pass in the noblest of ways. A duel to the death with the most iconic professors of her faculty. Boxing. And to the rhythm of her favourite songs.                
-                            </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
-                            <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Developed as part of the Gift Jam 2023
-                            </li>
-                            <li className="pb-2">
-                                Made in a span fo 14 days
-                            </li>
-                            </ul>
-                        </div>
-            }
-        }
-    },
-    ////////////////////DGT/////////////////
-    {
-        CardData:{
-            name: "Drifting Gibbon Time",
-            imageSrc: DGTPreview,
-            used: "GDScript, Godot",
-            description: "A game made for the Global Jam 2024",
-        },
-        ModalData:{
-            title:'Drifting Gibbon Time',
-            badges:["Arcade", "WEB", "GDScript Godot", "2024"],
-            ImagesToShow:[
-                DGTModalPreview0,
-                DGTModalPreview1,
-                DGTModalPreview2,
-            ],
-            VideosToShow:[
-                "https://www.youtube.com/embed/uJnBRfu4508",
-            ],
-            ModalContent: ()=>{
-                return  <div>
-                            <p className="pb-2">
-                                Gibbon wants BANANA. Gibbon has motorized trycicle. There are no BANANAS on sight. But there are people and animals around the city. Maybe they have BANANAS?                    
-                            </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
-                            <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Developed as part of the Global Game Jam 2024 with "Make me laugh" as theme
-                            </li>
-                            <li className="pb-2">
-                                Awarded as best art by the jury and best game by the public at voxel school/UCM site for Global Game Jam 2024
-                            </li>
-                            <li>
-                                Made in a span of 48 hours
-                            </li>
-                            </ul>
-                        </div>
-            }
-        }
-    },
-    ////////////////////THE CAT THAT WATCHED THE STARS/////////////////
-    {
-        CardData:{
-            name: "The cat that watched the stars",
-            imageSrc: TheCatThatWatchedTheStarsPreview,
-            used: "GDScript, Godot",
-            description: "A game made for the Mermelada Jam 2023",
-        },
-        ModalData:{
-            title:'The cat that watched the stars',
-            badges:["Arcade", "WEB", "GDScript Godot", "2023"],
-            ImagesToShow:[
-                TheCatThatWatchedTheStarsModalPreview0,
-                TheCatThatWatchedTheStarsModalPreview1,
-                TheCatThatWatchedTheStarsModalPreview2,
-            ],
-            VideosToShow:[
-                "https://www.youtube.com/embed/kdeup3j2obk",
-            ],
-            ModalContent: ()=>{
-                return <div>
-                    <p className="pb-2">
-                        Some say that cats can see beyond the planes of reality we humans are used to, and can even interact with entities beyond our comprehension. Watch the starry sky and capture the shooting stars and fireworks that you, a curious kitty, reach out with your paw.                
-                    </p>
-                    <h3 className="font-bold text-lg pb-2">Highlights:</h3>
-                    <ul className="list-disc pl-6">
-                    <li className="pb-2">
-                        Developed as part of the Mermelada Jam 2023
-                    </li>
-                    <li className="pb-2">
-                        Built with Godot combining the use of C# and GDScript                          
-                    </li>
-                    <li>
-                        Made in a span of 48 hours
-                    </li>
-                    </ul>
-                </div>
             }
         }
     },
