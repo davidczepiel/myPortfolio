@@ -98,7 +98,7 @@ export const ProjectsData = [
                                 All of the art and music was made during the jam.
                             </li>
                             <li className="pb-2">
-                                Developed as gift for the teachers of the Degree in Game Development at the Complutense University of Madrid.
+                                Developed as gift for the teachers of the Degree in Videogame Development at the Complutense University of Madrid.
                             </li>
                             </ul>
                         </div>
@@ -146,13 +146,13 @@ export const ProjectsData = [
     ////////////////////THE CAT THAT WATCHED THE STARS/////////////////
     {
         CardData:{
-            name: "The cat that watched the stars",
+            name: "The cat that watched the stars(and viceversa)",
             imageSrc: TheCatThatWatchedTheStarsPreview,
             used: "GDScript, Godot",
             description: "A game made for the Mermelada Jam 2023",
         },
         ModalData:{
-            title:'The cat that watched the stars',
+            title:'The cat that watched the stars (and viceversa)',
             badges:["Arcade", "WEB", "GDScript C# Godot", "2023"],
             ImagesToShow:[
                 TheCatThatWatchedTheStarsModalPreview0,
@@ -165,15 +165,15 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return <div>
                     <p className="pb-2">
-                        Some say that cats can see beyond the planes of reality we humans are used to, and can even interact with entities beyond our comprehension. Watch the starry sky and capture the shooting stars and fireworks that you, a curious kitty, reach out with your paw.                
+                    The Cat that Watched the Stars(and viceversa) is a game developed for the Mermelada Jam 2023, featuring the theme "If you blink you miss it." 
+                    In this game, players gaze at the night sky, where stars sporadically appear, transitioning from white to yellow. 
+                    The objective is to press the space button as soon as the star's color changes to 'capture' it. 
+                    However, pressing too soon results in the star evading capture, causing it to turn red. 
+                    The game rewards players with more points for quicker captures, offering a reflexes challenge.            
                     </p>
-                    <h3 className="font-bold text-lg pb-2">Highlights:</h3>
                     <ul className="list-disc pl-6">
                     <li>
                         Made in a span of 48 hours
-                    </li>
-                    <li className="pb-2">
-                        Developed as part of the Mermelada Jam 2023
                     </li>
                     <li className="pb-2">
                         Built with Godot combining the use of C# and GDScript                          
@@ -193,7 +193,7 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Animal Cooking',
-            badges:["Arcade", "PC", "SDL2", "Feb 2020 - May 2020"],
+            badges:["Arcade", "PC", "C++ SDL2", "Feb 2020 - May 2020"],
             ImagesToShow:[
                 AnimalCookingModalPreview0,
                 AnimalCookingModalPreview1,
@@ -209,10 +209,13 @@ export const ProjectsData = [
                             </p>
                             <ul className="list-disc pl-6">
                             <li className="pb-2">
-                                The game was developed entirely in C++ using SDL2.
+                                Developed entirely in C++ using SDL2.
                             </li>
                             <li className="pb-2">
                                 It has 31 levels across 5 different biomes, each presenting different dishes and challenges to overcome.                         
+                            </li>
+                            <li className="pb-2">
+                                    Developed as part of the Projects 2 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
                             </li>
                             </ul>
                         </div>
@@ -254,6 +257,9 @@ export const ProjectsData = [
                             <li>
                                 FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
                             </li>
+                            <li className="pb-2">
+                                    Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
+                            </li>
                             </ul>
                         </div>
             }
@@ -266,7 +272,7 @@ export const ProjectsData = [
             name: "The Dark Maze",
             imageSrc: TheDarkMazePreview,
             used: "C++, LUA, Physx, Ogre3D, FMOD",
-            description: "Custom C++ game engine made from scratch",
+            description: "A game about escaping from a maze",
         },
         ModalData:{
             title:'The Dark Maze',
@@ -279,19 +285,15 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return  <div>
                             <p className="pb-2">
-                                This is a first-person stealth game in which the player finds themselves inside a dark maze, and their objective is to find the key that allows them to escape. However, the maze is filled with enemies and traps, so the player will have to make use of medkits and switches to navigate through it safely.                            
+                                The Dark Maze is a stealth game in which the player finds themselves inside a dark maze, and their objective is to find the key that allows them to escape. However, the maze is filled with enemies and traps, so the player will have to make use of the medkits and switches he will find along the way to navigate through it safely.                            
                             </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
                             <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Ogre 3D was used to control all the rendering
-                            </li>
-                            <li className="pb-2">
-                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
-                            </li>
-                            <li>
-                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
-                            </li>
+                                <li className="pb-2">
+                                    Built using the Unitario Engine (a custom C++ engine made from scratch)
+                                </li>
+                                <li className="pb-2">
+                                    Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
+                                </li>
                             </ul>
                         </div>
             }
@@ -304,7 +306,7 @@ export const ProjectsData = [
             name: "Call of Cooking Garden Warfare",
             imageSrc: COCGWPreview,
             used: "C++, LUA, Physx, Ogre3D, FMOD",
-            description: "Custom C++ game engine made from scratch",
+            description: "A top-down game with ordes of enemies",
         },
         ModalData:{
             title:'Call of Cooking Garden Warfare',
@@ -317,18 +319,15 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return  <div>
                             <p className="pb-2">
-                                This is a top down arcade game where the player faces endless waves of enemies, and the goal is to survive as many rounds as possible. After each wave, the player is offered a series of upgrades for his character to help him during his run.                            </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
+                                Call of Cooking Garden Warfare is a top down shooter where the player faces endless waves of enemies, and the goal is to survive as many rounds as possible. After each wave, the player is offered a series of upgrades for his character to help him during his run.                            
+                            </p>
                             <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Ogre 3D was used to control all the rendering
-                            </li>
-                            <li className="pb-2">
-                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
-                            </li>
-                            <li>
-                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
-                            </li>
+                                <li className="pb-2">
+                                    Built using the Unitario Engine (a custom C++ engine made from scratch)
+                                </li>
+                                <li className="pb-2">
+                                    Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
+                                </li>
                             </ul>
                         </div>
             }
@@ -344,7 +343,7 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'OhnO! clone',
-            badges:["Puzzle", "Android PC", "Java", "2023"],
+            badges:["Puzzle", "Android & PC", "Java & Android Studio", "Feb 2022 - Mar 2022"],
             ImagesToShow:[
             ],
             VideosToShow:[
@@ -353,20 +352,13 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return <div>
                             <p className="pb-2">
-                                Unitario Engine is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, once a basic project core is established, it is easy to add more content to the project.                            
+                                Clone of the "Oh nO!" game written from scratch in Java using Android Studio. 
+                                The project's architecture was built with the advantages of the language
+                                in mind, creating a multiplatform game playable on both PC and Android devices. 
                             </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
-                            <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Ogre 3D was used to control all the rendering
-                            </li>
-                            <li className="pb-2">
-                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
-                            </li>
-                            <li>
-                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
-                            </li>
-                            </ul>
+                            <p>
+                                Developed as part of the Videogames in Mobile subject of the Degree in Videogame Development at Universidad Complutense de Madrid. 
+                            </p>
                         </div>
             }
         }
@@ -381,7 +373,7 @@ export const ProjectsData = [
         },
         ModalData:{
             title:'Flow Free clone',
-            badges:["Puzzle", "Android", "C# Unity", "2023"],
+            badges:["Puzzle", "Android", "C# Unity", "Apr 2023 - May 2023"],
             ImagesToShow:[
             ],
             VideosToShow:[
@@ -390,20 +382,12 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return <div>
                             <p className="pb-2">
-                                Unitario Engine is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, once a basic project core is established, it is easy to add more content to the project.                            
+                                Clone of the popular game "Flow Free," recreated using the Unity engine and incorporating the original game's assets. 
+                                It includes all of the original game's levels and features integrated advertisements. 
                             </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
-                            <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Ogre 3D was used to control all the rendering
-                            </li>
-                            <li className="pb-2">
-                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
-                            </li>
-                            <li>
-                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
-                            </li>
-                            </ul>
+                            <p>
+                                Developed as part of the Videogames in Mobile subject of the Degree in Videogame Development at Universidad Complutense de Madrid. 
+                            </p>
                         </div>
             }
         }
@@ -411,14 +395,14 @@ export const ProjectsData = [
     ////////////////////WOLFESTEIN 3D/////////////////
     {
         CardData:{
-            name: "Wolfestein3D on PS4",
+            name: "Wolfestein 3D on PS4",
             imageSrc: Wolfestein3DPreview,
             used: "C++, PS4 Development Kit",
             description: "A walker of the original Wolfestein3D for the PS4",
         },
         ModalData:{
-            title:'Wolfestein3D on PS4',
-            badges:["Walker", "PC PS4", "C++", "2023"],
+            title:'Wolfestein 3D on PS4',
+            badges:["Walker", "PC & PS4", "C++ PS4-Devkit", "Mar 2022 - May 2022"],
             ImagesToShow:[
             ],
             VideosToShow:[
@@ -427,23 +411,11 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return <div>
                             <p className="pb-2">
-                            A copy of Wolfenstein 3D (1992) maps and movement. Developed using C++ for PC and PS4.                           
+                                Walker of the classic Wolfenstein 3D game, developed from scratch in a multiplatform project, both for PC and PlayStation 4, including the use of the official SDK and Tools provided by Sony.
                             </p>
-                            <h3 className="font-bold text-lg pb-2">Highlights:</h3>
-                            <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Multiplatform architecture (PC and PS4)
-                            </li>
-                            <li className="pb-2">
-                                Multithreading architecture. Two threads (render and logic) communicating through a concurrent queue                            
-                            </li>
-                            <li>
-                                PS4 memory and render buffer management. Using the CPU for render in PS4 and GPU in PC
-                            </li>
-                            <li>
-                                Simulation of a 3D world using raycast algorithm in a 2D world
-                            </li>
-                            </ul>
+                            <p>
+                                Developed as part of the Videogames in Console subject of the Degree in Videovame Development at Universidad Complutense de Madrid.
+                            </p>
                         </div>
             }
         }

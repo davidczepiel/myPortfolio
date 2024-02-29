@@ -66,7 +66,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                   <div class=" flex-grow grid grid-cols-2 gap-4 h-64 h-72">
                       {/* GENRE */}
                       <div className="flex pt-10  justify-center">
-                        <div className="text-center">
+                        <div className="text-center flex flex-col items-center justify-center">
                           <div className={getBadgeTheme()}>
                             GENRE
                           </div>
@@ -75,7 +75,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                       </div>
                       {/* PLATFORMS */}
                       <div className="flex pt-10 justify-center ">
-                        <div className="text-center">
+                        <div className="text-center flex flex-col items-center justify-center">
                           <div className={getBadgeTheme()}>
                             PLATFORMS
                           </div>
@@ -83,8 +83,8 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                         </div>
                       </div>
                       {/* TOOLS */}
-                      <div className="flex pt-10  justify-center">
-                        <div className="text-center">
+                      <div className="flex pt-10 justify-center">
+                        <div className="text-center flex flex-col items-center justify-center">
                           <div className={getBadgeTheme()}>
                             TOOLS
                           </div>
@@ -93,7 +93,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                       </div>
                       {/* DEVELOPED */}
                       <div className="flex pt-10  justify-center">
-                        <div className="text-center">
+                        <div className="text-center flex flex-col items-center justify-center">
                           <div className={getBadgeTheme()}>
                           DEVELOPED
                           </div>
