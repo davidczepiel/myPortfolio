@@ -51,13 +51,13 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return <div>
-                    <p className="pb-3">    
+                    <p className="pb-4">    
                         LumenFall is an arcade game for Android devices that introduces a fresh twist to the "falling blocks" genre. 
                         In it, the player is given a board on which pieces of different colors fall and his objective is to match them to prevent the board form filling up.
                          The entire game was developed solely by me over the course of one year. 
                     </p>
                 
-                    <ul role="list" class="marker:text-base-400 list-disc pl-10 space-y-3">
+                    <ul role="list" class="marker:text-base-400 list-disc pl-6 space-y-2">
                         <li><strong>EASY TO LEARN:</strong> LumenFall's gameplay is easy to pick up, making it accessible to players of all skill levels, while still offerring a rewarding challenge for puzzle enthusiasts.</li>
                         <li><strong>MULTIPLE PLAYSTYLES:</strong> With 5 game modes and 5 board sizes, players have a range of options to tailor their gaming experience.</li>
                         <li><strong>CUSTOMIZATION:</strong> Change the game's appearance by choosing from a variety of skins and use the skin editor to create your unique designs.</li>
@@ -88,18 +88,25 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return  <div>
                             <p className="pb-2">
-                            Apruebame Esta is a rythm game developed for the Gift Jam 2023, in it, you play as Ragnahilda, a determined student who, after facing academic setbacks, has decided to obtain her exam pass in an unconventional way, by engaging in boxing matches against her teachers.                
+                                "Apruébame Esta" is a rythm game in which you play as Ragnahilda, a determined student who, after facing academic setbacks, 
+                                has decided to obtain her exam pass in an unconventional way, by engaging in boxing matches against her teachers.
+                            </p>
+                            <p className="pb-4">
+                                The player is presented with a timeline featuring arrows that must be pressed in sync with the beat. Matches unfold in two phases: 
+                                an attack phase, where the player needs to press those directions to throw punches, and a defense phase, 
+                                where the timeline displays the opponent's incoming attacks, 
+                                making the player have to press the opposite direction to evade them.
                             </p>
                             <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Made in a span fo 14 days.
-                            </li>
-                            <li className="pb-2">
-                                All of the art and music was made during the jam.
-                            </li>
-                            <li className="pb-2">
-                                Developed as gift for the teachers of the Degree in Videogame Development at the Complutense University of Madrid.
-                            </li>
+                                <li className="pb-2">
+                                    Developed in a span fo 14 days for the Gift Jam 2023.
+                                </li>
+                                <li className="pb-2">
+                                    All of the art and music was made during the jam.
+                                </li>
+                                <li className="pb-2">
+                                    Developed as gift for the teachers of the Degree in Videogame Development at the Universidad Complutense de Madrid.
+                                </li>
                             </ul>
                         </div>
             }
@@ -126,18 +133,19 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return  <div>
-                            <p className="pb-2">
-                            Drifting Gibbon Time is a arcade-driving game created for the Global Game Jam 2024, with "make me laugh" as theme. 
-                            In it, you play as a gibbon riding a motorized tricycle, aiming to collide with civilians and rank up as many points as possible, 
-                            while avoiding the city's obstacles.                    
+                            <p className="pb-4">
+                                "Drifting Gibbon Time" is an arcade-driving game where you play as a gibbon riding a motorized tricycle, 
+                                and your objective is to collide with as many civilians as possible while avoiding the city's obstacles.  
+                                After colliding with a bunch of civilians, you level up, giving you the choice to replenish some 
+                                of your health or improve your driving stats to further cause caos on the road.
                             </p>
                             <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Developed in a span of 48 hours.
-                            </li>
-                            <li className="pb-2">
-                                Awarded as best art by the jury and best game by the public at voxel school/UCM site for Global Game Jam 2024.
-                            </li>
+                                <li className="pb-2">
+                                    Developed in a span of 48 hours for the Global Game Jam 2024, featuring the theme "make me laugh".
+                                </li>
+                                <li className="pb-2">
+                                    Awarded as best art by the jury and best game by the public at voxel school/UCM site for Global Game Jam 2024.
+                                </li>
                             </ul>
                         </div>
             }
@@ -164,20 +172,20 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return <div>
-                    <p className="pb-2">
-                    The Cat that Watched the Stars(and viceversa) is a game developed for the Mermelada Jam 2023, featuring the theme "If you blink you miss it." 
-                    In this game, players gaze at the night sky, where stars sporadically appear, transitioning from white to yellow. 
-                    The objective is to press the space button as soon as the star's color changes to 'capture' it. 
+                    <p className="pb-4">
+                    The Cat that Watched the Stars(and viceversa) is a game where you play as a cat gazing at the night sky, 
+                    where stars sporadically appear. 
+                    Each star transitions from white to yellow after a brief delay, and the objective is to press the space button as soon as the color changes to 'capture' it. 
                     However, pressing too soon results in the star evading capture, causing it to turn red. 
                     The game rewards players with more points for quicker captures, offering a reflexes challenge.            
                     </p>
                     <ul className="list-disc pl-6">
-                    <li>
-                        Made in a span of 48 hours
-                    </li>
-                    <li className="pb-2">
-                        Built with Godot combining the use of C# and GDScript                          
-                    </li>
+                        <li className="pb-2">
+                            Made in a span of 48 hours for the Mermelada Jam 2023 featuring the theme "If you blink you miss it"
+                        </li>
+                        <li className="pb-2">
+                            Built with Godot combining the use of C# and GDScript                          
+                        </li>
                     </ul>
                 </div>
             }
@@ -203,20 +211,20 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return  <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                             Animal Cooking is a fast-paced cooking game designed for two players, which draws inspiration from the chaotic gameplay of Overcooked. 
                             Players must work together in a divided kitchen environment to assemble and cook dishes while hunting down elusive living ingredients.
                             </p>
                             <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Developed entirely in C++ using SDL2.
-                            </li>
-                            <li className="pb-2">
-                                It has 31 levels across 5 different biomes, each presenting different dishes and challenges to overcome.                         
-                            </li>
-                            <li className="pb-2">
-                                    Developed as part of the Projects 2 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
-                            </li>
+                                <li className="pb-2">
+                                    Developed entirely in C++ using SDL2.
+                                </li>
+                                <li className="pb-2">
+                                    It has 31 levels across 5 different biomes, each presenting different dishes and challenges to overcome.                         
+                                </li>
+                                <li className="pb-2">
+                                        Developed as part of the Projects 2 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
+                                </li>
                             </ul>
                         </div>
             }
@@ -243,23 +251,23 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return  <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                                 Unitario Engine is a 3D Game Engine built with C++ in a 4-month span. Thanks to its component-based architecture and data-driven structure, once a basic project core is established, it is easy to add more content to the project.                            
                             </p>
                             <h3 className="font-bold text-lg pb-2">Highlights:</h3>
                             <ul className="list-disc pl-6">
-                            <li className="pb-2">
-                                Ogre 3D was used to control all the rendering
-                            </li>
-                            <li className="pb-2">
-                                Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
-                            </li>
-                            <li>
-                                FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
-                            </li>
-                            <li className="pb-2">
-                                    Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
-                            </li>
+                                <li className="pb-2">
+                                    Ogre 3D was used to control all the rendering
+                                </li>
+                                <li className="pb-2">
+                                    Physx was the engine used to control all the Physics related side, allowing the use of different shapes with a great performance.                            
+                                </li>
+                                <li>
+                                    FMOD is used to handle the whole sound system, allowing the use of dynamic and adaptative music, as well as different channels for SFX and music.
+                                </li>
+                                <li className="pb-2">
+                                        Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
+                                </li>
                             </ul>
                         </div>
             }
@@ -284,7 +292,7 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return  <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                                 The Dark Maze is a stealth game in which the player finds themselves inside a dark maze, and their objective is to find the key that allows them to escape. However, the maze is filled with enemies and traps, so the player will have to make use of the medkits and switches he will find along the way to navigate through it safely.                            
                             </p>
                             <ul className="list-disc pl-6">
@@ -318,7 +326,7 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return  <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                                 Call of Cooking Garden Warfare is a top down shooter where the player faces endless waves of enemies, and the goal is to survive as many rounds as possible. After each wave, the player is offered a series of upgrades for his character to help him during his run.                            
                             </p>
                             <ul className="list-disc pl-6">
@@ -351,7 +359,7 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                                 Clone of the "Oh nO!" game written from scratch in Java using Android Studio. 
                                 The project's architecture was built with the advantages of the language
                                 in mind, creating a multiplatform game playable on both PC and Android devices. 
@@ -381,7 +389,7 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                                 Clone of the popular game "Flow Free," recreated using the Unity engine and incorporating the original game's assets. 
                                 It includes all of the original game's levels and features integrated advertisements. 
                             </p>
@@ -410,7 +418,7 @@ export const ProjectsData = [
             ],
             ModalContent: ()=>{
                 return <div>
-                            <p className="pb-2">
+                            <p className="pb-4">
                                 Walker of the classic Wolfenstein 3D game, developed from scratch in a multiplatform project, both for PC and PlayStation 4, including the use of the official SDK and Tools provided by Sony.
                             </p>
                             <p>
