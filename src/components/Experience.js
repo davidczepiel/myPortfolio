@@ -15,7 +15,7 @@ const myEvents=[
           <p className="pb-2">
           As a Software Developer at Recreativos Franco, my primary focus lies in C++ development, particularly in the creation of games for bingos and casinos, leveraging the company's proprietary engine and adhering to the industry's strict standards.          </p>
           <p className="pb-2">
-            My responsibilities encompass the entire development lifecycle, from concept to execution. Working closely with the art and math departments, I ensure that each game not only meets regulatory requirements but also delivers an engaging and visually appealing experience for players.
+            Working closely with the art and math departments, I ensure that each game not only meets regulatory requirements but also delivers an engaging and visually appealing experience for players.
           </p>
           <h3 className="font-bold text-lg pb-2">Notable Contributions:</h3>
           <ul className="list-disc pl-6">
