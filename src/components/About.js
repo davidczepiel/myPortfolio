@@ -43,9 +43,16 @@ export default function About() {
               <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
                 About Me
               </p>
-              <p className="mt-6 text-lg leading-8" data-aos="fade-right">
-              I'm a software developer specialized in the field of video games. With a degree in video game development under my belt, I've been able to work on multiple projects for platforms such as PC, Android, and even had the opportunity to experience what console development is like by making use of PS4 development kits. Although I have experience with tools like Unity or Godot, I feel the most comfortable working in C++.
-             </p>
+              <div data-aos="fade-right">
+                <p className="mt-6">
+                  Nothing beats the joy you get when you see somebody having fun with a game you've developed. It's this passion that has led me to pursue a career in the world of game development.
+                  Within this vast and dynamic field, I've found my niche in the technical side of things, delving into the intricacies of algorithms and software architecture principles that bring gaming worlds to life.
+                </p>
+                <p className="mt-2">
+                  I try to stay up to date with industry standards and new technologies, making continuous learning my highest priority. Participating in game jams offers the perfect opportunity to apply and refine these skills in real-world scenarios                  
+
+                </p>
+              </div>
             </div>
           </div>
         </div>
