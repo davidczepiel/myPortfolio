@@ -48,7 +48,7 @@ export default function About() {
                   Nothing beats the joy you get when you see somebody having fun with a game you've developed. It's this passion that has led me to pursue a career in the world of game development.
                   Within this vast and dynamic field, I've found my niche in the technical side of things, delving into the intricacies of algorithms and software architecture principles that bring gaming worlds to life.
                 </p>
-                <p className="mt-2">
+                <p className="mt-2 text-lg leading-8">
                   I try to stay up to date with industry standards and new technologies, making continuous learning my highest priority. Participating in game jams offers the perfect opportunity to apply and refine these skills in real-world scenarios                  
 
                 </p>
