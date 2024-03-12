@@ -44,13 +44,14 @@ export default function About() {
                 About Me
               </p>
               <div data-aos="fade-right">
-                <p className="mt-6 text-lg leading-8">
+                <p className="mt-6 text-xl leading-8">
                   Nothing beats the joy you get when you see somebody having fun with a game you've developed. It's this passion that has led me to pursue a career in the world of game development.
-                  Within this vast and dynamic field, I've found my niche in the technical side of things, delving into the intricacies of algorithms and software architecture principles that bring gaming worlds to life.
                 </p>
-                <p className="mt-2 text-lg leading-8">
-                  I try to stay up to date with industry standards and new technologies, making continuous learning my highest priority. Participating in game jams offers the perfect opportunity to apply and refine these skills in real-world scenarios                  
-
+                <p className="mt-6 text-xl leading-8">
+                  Within this vast and dynamic field, I've found my niche in the technical side of things, where I take joy in exploring the intricacies of algorithms and software architecture principles that bring gaming worlds to life.                
+                </p>
+                <p className="mt-6 text-xl leading-8">
+                  With many years of experience, both in profesional and personal projects, I try to stay up to date with industry standards and new technologies, making continuous learning my highest priority.                 
                 </p>
               </div>
             </div>
