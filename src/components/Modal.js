@@ -109,16 +109,7 @@ const Modal = ({ isOpen, onClose, projectINDEX }) => {
                   </p>
                 </div>
                 <div className="flex items-start justify-between border-y border-solid  rounded-t"></div>
-                <div className="flex justify-center items-center pt-6">
-                  <a
-                    href={ProjectsData[projectINDEX].ModalData.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline mx-5"
-                  >
-                    GitHub
-                  </a>
-                </div>
+                {ProjectsData[projectINDEX].ModalData.Buttons()}
               </div>
             </div>
           </div>

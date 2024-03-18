@@ -31,6 +31,17 @@ import DGTModalPreview2 from "../Resources/Projects/DGT/DGTModalPreview2.png"
 import COCGWPreview from "../Resources/Projects/CallOfCookingGardenWarfare/COCGWPreview.png"
 import TheDarkMazePreview from "../Resources/Projects/TheDarkMaze/TheDarkMazePreview.png"
 
+const getBtnTheme = () => {
+    if(localStorage.getItem("theme") === 'dark')
+      return ' text-center text-l md:text-xl  font-semibold me-2 px-4 py-2 mb-1.5 mx-2 rounded-md bg-gray-400 text-gray-800'+
+      ' hover:scale-110 transition-transform duration-300 ease-in-out';
+    else 
+    return ' text-center text-l md:text-xl  font-semibold me-2 px-4 py-2 mb-1.5 mx-2 rounded-md bg-gray-800 text-white'+
+    ' hover:scale-110 transition-transform duration-300 ease-in-out';
+    //   return 'text-center text-l md:text-xl w-32 md:w-44 font-bold me-2 px-2.5 py-0.5 mb-1.5 rounded-md bg-gray-800 text-white';
+  };
+
+
 export const ProjectsData = [
     ////////////////////LUMENFALL/////////////////
     {
@@ -63,6 +74,17 @@ export const ProjectsData = [
                         <li><strong>CUSTOMIZATION:</strong> Change the game's appearance by choosing from a variety of skins and use the skin editor to create your unique designs.</li>
                     </ul>
                 </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            Game not published yet
+                            </a>
+                        </div>
             }
         }
     },
@@ -109,7 +131,27 @@ export const ProjectsData = [
                                 </li>
                             </ul>
                         </div>
-            }
+                },
+                Buttons: ()=>{
+                    return  <div className="flex justify-center items-center pt-6 ">
+                                <a
+                                href="https://github.com/freesstylers/GiftJam2324"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                GitHub
+                                </a>
+                                <a
+                                href="https://freestylers-studio.itch.io/apruebame-esta"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                Itch.io
+                                </a>
+                            </div>
+                }
         }
     },
     ////////////////////DGT/////////////////
@@ -147,6 +189,26 @@ export const ProjectsData = [
                                     Awarded as best art by the jury and best game by the public at voxel school/UCM site for Global Game Jam 2024.
                                 </li>
                             </ul>
+                        </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                                <a
+                                href="https://github.com/freesstylers/GoofyAhhCar"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                GitHub
+                                </a>
+                                <a
+                                href="https://freestylers-studio.itch.io/driftin-gibbon-time"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                Itch.io
+                                </a>
                         </div>
             }
         }
@@ -188,6 +250,26 @@ export const ProjectsData = [
                         </li>
                     </ul>
                 </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                               <a
+                                href="https://github.com/freesstylers/MermeladaJam2023"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                GitHub
+                                </a>
+                                <a
+                                href="https://freestylers-studio.itch.io/cat-watched-stars-viceversa"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                Itch.io
+                                </a>
+                        </div>
             }
         }
     },
@@ -224,6 +306,18 @@ export const ProjectsData = [
                                         Developed as part of the Projects 2 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
                                 </li>
                             </ul>
+                        </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                                <a
+                                href="https://github.com/davidczepiel/AnimalCooking"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                GitHub
+                                </a>
                         </div>
             }
         }
@@ -269,6 +363,18 @@ export const ProjectsData = [
                                 </li>
                             </ul>
                         </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            href="https://github.com/davidczepiel/Unitario-Engine"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            GitHub
+                            </a>
+                        </div>
             }
         }
     },
@@ -303,6 +409,26 @@ export const ProjectsData = [
                                     Developed as part of the Projects 3 subject of the Degree in Videogame Development at Universidad Complutense de Madrid.                             
                                 </li>
                             </ul>
+                        </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            href="https://github.com/davidczepiel/Unitario-Engine"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            Unitario Engine
+                            </a>
+                            <a
+                            href="https://github.com/4anotherday/DarkMaze"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            GitHub
+                            </a>
                         </div>
             }
         }
@@ -339,6 +465,26 @@ export const ProjectsData = [
                                 </li>
                             </ul>
                         </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            href="https://github.com/davidczepiel/Unitario-Engine"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            Unitario Engine
+                            </a>
+                            <a
+                            href="https://github.com/4anotherday/CallOfCooking"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            GitHub
+                            </a>
+                        </div>
             }
         }
     },
@@ -374,6 +520,17 @@ export const ProjectsData = [
                                 </li>
                             </ul>
                         </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            Code not available due to NDA
+                            </a>
+                        </div>
             }
         }
     },
@@ -408,6 +565,18 @@ export const ProjectsData = [
                                 </li>
                             </ul>
                         </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            href="https://github.com/davidczepiel/Mobile-Game-Clones"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            GitHub
+                            </a>
+                        </div>
             }
         }
     },
@@ -440,6 +609,18 @@ export const ProjectsData = [
                                     Developed as part of the Videogames in Mobile subject of the Degree in Videogame Development at Universidad Complutense de Madrid.
                                 </li>
                             </ul>
+                        </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            href="https://github.com/davidczepiel/Mobile-Game-Clones"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            GitHub
+                            </a>
                         </div>
             }
         }

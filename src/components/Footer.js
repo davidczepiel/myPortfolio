@@ -49,6 +49,7 @@ export default function Footer() {
       <p className="mt-3">
         Created by <span className="font-bold">David Czepiel Babiarz</span>
       </p>
+      <div className="h-48"/>
     </div>
   );
 }
