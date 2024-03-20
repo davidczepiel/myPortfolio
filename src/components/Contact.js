@@ -17,8 +17,9 @@ export default function Contact() {
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-x-8 gap-y-16 px-8">
               <div data-aos="zoom-in">
-                <p className="mt-6 text-xl leading-8">
-                  If you're seeking a dedicated and creative team member, I'd love to chat! Whether it's an on-site, hybrid, or fully remote job, I'm eager to bring my skills and enthusiasm to the table. Please feel free to reach out to me via the following contact options. I am always eager to explore new job opportunities.                
+                <p className="mt-6 text-xl text-center leading-8">
+                  If you're seeking a dedicated and creative team member, I'd love to chat! Please feel free to reach out to me via the following contact options.  
+                  I am always open to exploring new opportunities.        
                 </p>
               </div>
         </div>

@@ -2,7 +2,8 @@ import LumenFallPreview from "../Resources/Projects/LumenFall/LumenFallPreview.p
 import LumenFallModalPreview0 from "../Resources/Projects/LumenFall/LumenFallModalPreview0.jpg";
 import LumenFallModalPreview1 from "../Resources/Projects/LumenFall/LumenFallModalPreview1.png";
 
-import UnitarioEnginePreview from "../Resources/Projects/UnitarioEngine/4AnotherDayPreview.png";
+import UnitarioEnginePreview from "../Resources/Projects/UnitarioEngine/4AnotherDayPreview.jpeg";
+import UnitarioEngineTechnologies from "../Resources/Projects/UnitarioEngine/EngineTechnologies.png";
 import OhnOPreview from "../Resources/Projects/OhnO/OhnOPreview.png";
 import FlowFreePreview from "../Resources/Projects/FlowFree/FlowFreePreview.png";
 
@@ -335,9 +336,7 @@ export const ProjectsData = [
             title:'Unitario Engine',
             badges:["Game Engine", "PC", "SDL2 Ogre3D Physx FMOD", "Feb 2021 - May 2021"],
             ImagesToShow:[
-                "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-                "https://wallpapercave.com/wp/wp3386769.jpg",
-                "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+                UnitarioEngineTechnologies
             ],
             VideosToShow:[
             ],
