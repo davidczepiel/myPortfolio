@@ -113,15 +113,17 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return  <div>
                             <p className="pb-2">
-                                Join Witiza, armed with his sword, and journey through the various palace rooms to confront the COCOLLONA, who aims to lay waste to everything, 
-                                with settings as varied and literary as Little Red Riding Hood, That's Life, a book written by Hatsune Miku, the Communist Manifesto, 
-                                or Don Quixote de La Mancha.
+                                Hematorrossa is a game inspired by the legend of Sant Jordi. In this 2D platformer, players take the role of Witiza, 
+                                a knight tasked with killing the dragon that is haunting the village of Montblanc. To achieve this, 
+                                players  will have to navigate through a set number of ramdomized rooms filled with enemies, 
+                                having to eliminate them as quickly as possible in order to advance. 
+                                The game culminates with a bossfight against said dragon.
                             </p>
                             <p className="pb-4">
                             </p>
                             <ul className="list-disc pl-6">
                                 <li className="pb-2">
-                                    Developed in a span fo 21 days for the Sant Jordi Jam 2024.
+                                    Developed in a span fo 21 days for the Sant Jordi Jam 2024, featuring the theme "Legend".
                                 </li>
                                 <li className="pb-2">
                                     All of the art and music was made during the jam.
@@ -690,7 +692,7 @@ export const ProjectsData = [
     {
         CardData:{
             name: "HexMatch",
-            description: "A new take on the match-three genre",
+            description: "A different take on the match-three genre",
             imageSrc: HexMatchPreview,
             used: "C#, Unity",
         },
@@ -705,13 +707,13 @@ export const ProjectsData = [
             ModalContent: ()=>{
                 return <div>
                     <p className="pb-4">    
-                        LumenFall is an arcade game for Android devices that introduces a fresh twist to the "falling blocks" genre. 
-                        In it, the player is given a board on which pieces of different colors fall and his objective is to match them to prevent the board form filling up.
-                         The entire game was developed solely by me over the course of one year. 
+                    HexMatch is an arcade puzzle game for Android devices with a different take on the "match three" genre. 
+                    In it, the player is given a board on which pieces of different colors appear, and their objective is to 
+                    match them to prevent the board from filling up. 
+                    The entire game was developed solely by me over the course of 5 months.
                     </p>
                 
                     <ul role="list" class="marker:text-base-400 list-disc pl-6 space-y-2">
-                        <li><strong>EASY TO LEARN:</strong> LumenFall's gameplay is easy to pick up, making it accessible to players of all skill levels, while still offerring a rewarding challenge for puzzle enthusiasts.</li>
                         <li><strong>MULTIPLE BOARDS:</strong> With 5 board sizes, players have a range of options to tailor their gaming experience.</li>
                         <li><strong>CUSTOMIZATION:</strong> Change the game's appearance by choosing from a variety of skins.</li>
                     </ul>
