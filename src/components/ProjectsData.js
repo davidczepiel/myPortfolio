@@ -2,6 +2,8 @@ import LumenFallPreview from "../Resources/Projects/LumenFall/LumenFallPreview.p
 import LumenFallModalPreview0 from "../Resources/Projects/LumenFall/LumenFallModalPreview0.jpg";
 import LumenFallModalPreview1 from "../Resources/Projects/LumenFall/LumenFallModalPreview1.png";
 
+import HexMatchPreview from "../Resources/Projects/HexMatch/HexMatch_Preview.png";
+
 import UnitarioEnginePreview from "../Resources/Projects/UnitarioEngine/4AnotherDayPreview.jpeg";
 import UnitarioEngineTechnologies from "../Resources/Projects/UnitarioEngine/EngineTechnologies.png";
 import OhnOPreview from "../Resources/Projects/OhnO/OhnOPreview.png";
@@ -23,6 +25,9 @@ import ApruebameEstaPreview from "../Resources/Projects/ApruebameEsta/ApruebameE
 import ApruebameEstaModalPreview0 from "../Resources/Projects/ApruebameEsta/ApruebameEstaModalPreview0.png";
 import ApruebameEstaModalPreview1 from "../Resources/Projects/ApruebameEsta/ApruebameEstaModalPreview1.png";
 import ApruebameEstaModalPreview2 from "../Resources/Projects/ApruebameEsta/ApruebameEstaModalPreview2.png";
+
+import HematorrosaPreview from "../Resources/Projects/Hematorrossa/Hematorrossa_Preview.png";
+// import ApruebameEstaModalPreview0 from "../Resources/Projects/ApruebameEsta/ApruebameEstaModalPreview0.png";
 
 import DGTPreview from "../Resources/Projects/DGT/DGTPreview.png"
 import DGTModalPreview0 from "../Resources/Projects/DGT/DGTModalPreview0.png"
@@ -87,6 +92,63 @@ export const ProjectsData = [
                             </a>
                         </div>
             }
+        }
+    },
+    ////////////////////HEMATORROSSA/////////////////
+    {
+        CardData:{
+            name: "Hematorrossa",
+            imageSrc: HematorrosaPreview,
+            used: "GDScript, Godot",
+            description: "A game made for the Sant Jordi Jam 2024",
+        },
+        ModalData:{
+            title:'Hematorrossa',
+            badges:["2D Platformer", "WEB", "GDScript Godot", "Apr 2024"],
+            ImagesToShow:[
+            ],
+            VideosToShow:[
+                "https://www.youtube.com/embed/57OJgwo0zYo",
+            ],
+            ModalContent: ()=>{
+                return  <div>
+                            <p className="pb-2">
+                                Join Witiza, armed with his sword, and journey through the various palace rooms to confront the COCOLLONA, who aims to lay waste to everything, 
+                                with settings as varied and literary as Little Red Riding Hood, That's Life, a book written by Hatsune Miku, the Communist Manifesto, 
+                                or Don Quixote de La Mancha.
+                            </p>
+                            <p className="pb-4">
+                            </p>
+                            <ul className="list-disc pl-6">
+                                <li className="pb-2">
+                                    Developed in a span fo 21 days for the Sant Jordi Jam 2024.
+                                </li>
+                                <li className="pb-2">
+                                    All of the art and music was made during the jam.
+                                </li>
+                            </ul>
+                        </div>
+                },
+                Buttons: ()=>{
+                    return  <div className="flex justify-center items-center pt-6 ">
+                                <a
+                                href="https://github.com/freesstylers/SantJordiJam"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                GitHub
+                                </a>
+                                <a
+                                href="https://freestylers-studio.itch.io/hematorosa"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={getBtnTheme()}
+                                >
+                                Itch.io
+                                </a>
+                            </div>
+                }
         }
     },
     ////////////////////APRUEBAME ESTA/////////////////
@@ -619,6 +681,50 @@ export const ProjectsData = [
                             className={getBtnTheme()}
                             >
                             GitHub
+                            </a>
+                        </div>
+            }
+        }
+    },
+    ////////////////////HEXMATCH/////////////////
+    {
+        CardData:{
+            name: "HexMatch",
+            description: "A new take on the match-three genre",
+            imageSrc: HexMatchPreview,
+            used: "C#, Unity",
+        },
+        ModalData:{
+            title:'HexMatch',
+            badges:["Arcade", "Android", "C# Unity", "2023"],
+            ImagesToShow:[
+                HexMatchPreview,
+            ],
+            VideosToShow:[
+            ],
+            ModalContent: ()=>{
+                return <div>
+                    <p className="pb-4">    
+                        LumenFall is an arcade game for Android devices that introduces a fresh twist to the "falling blocks" genre. 
+                        In it, the player is given a board on which pieces of different colors fall and his objective is to match them to prevent the board form filling up.
+                         The entire game was developed solely by me over the course of one year. 
+                    </p>
+                
+                    <ul role="list" class="marker:text-base-400 list-disc pl-6 space-y-2">
+                        <li><strong>EASY TO LEARN:</strong> LumenFall's gameplay is easy to pick up, making it accessible to players of all skill levels, while still offerring a rewarding challenge for puzzle enthusiasts.</li>
+                        <li><strong>MULTIPLE BOARDS:</strong> With 5 board sizes, players have a range of options to tailor their gaming experience.</li>
+                        <li><strong>CUSTOMIZATION:</strong> Change the game's appearance by choosing from a variety of skins.</li>
+                    </ul>
+                </div>
+            },
+            Buttons: ()=>{
+                return  <div className="flex justify-center items-center pt-6 ">
+                            <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={getBtnTheme()}
+                            >
+                            Game still in development
                             </a>
                         </div>
             }
